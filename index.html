@@ -10,37 +10,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Navigation -->
-    <!-- code credit: Bootstrap (altered) -->
-    <nav class="navbar navbar-light bg-light navbar-expand-xl">
-        <a class="navbar-brand ml-5" href="#">Malazan Saga</a>
-        <!-- CSS TO DO: should be below navbar brand -->
-        <div class="d-none d-sm-block">
-            <p class="navbar-text my-auto ml-3"><i>The harder the world, the fiercer the honour.</i></p>
+    <!-- Header & Navbar -->
+    <!-- code credit: Bootstrap navigation -->
+    <header>
+        <nav class="navbar navbar-light bg-light navbar-expand-xl">
+            <a class="navbar-brand ml-5" href="#">Malazan Saga</a>
+            <!-- CSS TO DO: quote from div should be below navbar brand -->
+            <div class="d-none d-sm-block">
+                <p class="navbar-text my-auto ml-3"><i>The harder the world, the fiercer the honour.</i></p>
+            </div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="active nav-item mr-3"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#">Authors</a></li>
+                    <li class="nav-item mr-3 dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collections</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Malazan Book of the Fallen</a>
+                            <a class="dropdown-item" href="#">Novels of the Malazan Empire</a>
+                            <a class="dropdown-item" href="#">Path to Ascendancy</a>
+                            <a class="dropdown-item" href="#">Kharkanas Trilogy</a>
+                            <a class="dropdown-item" href="#">Witness Trilogy</a>
+                            <a class="dropdown-item" href="#">Erikson's Novellas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="#">Reading Order</a></li>
+                    <li class="nav-item mr-3"><strong><a class="nav-link" href="#">Subscribe!</a></strong></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /.header & navbar -->
+    <!-- Hero Image & CTO -->
+    <section>
+        <!-- CSS TO DO: add hero-image -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <blockquote>"A man possessing power must act decisively, Ganoes Paran, else it would trickle away through his fingers."</blockquote>
+                        - Steven Erikson, Memories of Ice
+                    </p>
+                    <h1>Be decisive and ACT now! Subscribe to Malazan Quote Newsletter!</h1>
+                    <a class="btn btn-primary" href="#" role="button">Subscribe!</a>
+                    <p>
+                        <blockquote>"When you do not recognize the wrongs of the past, the future takes it's revenge."</blockquote>
+                        - Ian C. Esslemont, Stonewielder
+                    </p>
+                </div>
+            </div>
         </div>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="active nav-item mr-3"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item mr-3"><a class="nav-link" href="#">Author</a></li>
-                <li class="nav-item mr-3 dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collections</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Malazan Book of the Fallen</a>
-                        <a class="dropdown-item" href="#">Novels of the Malazan Empire</a>
-                        <a class="dropdown-item" href="#">Path to Ascendancy</a>
-                        <a class="dropdown-item" href="#">Kharkanas Trilogy</a>
-                        <a class="dropdown-item" href="#">Witness Trilogy</a>
-                        <a class="dropdown-item" href="#">Erikson's Novellas</a>
-                    </div>
-                </li>
-                <li class="nav-item mr-3"><a class="nav-link" href="#">Reading Order</a></li>
-                <li class="nav-item mr-3"><strong><a class="nav-link" href="#">Sign Up!</a></strong></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- /.navigation -->
+    </section>
+    <!-- /.hero image & CTO-->
+
     <!-- Bootstrap v4.6 -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
