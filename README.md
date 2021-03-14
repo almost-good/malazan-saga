@@ -59,6 +59,7 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 
 ## Technologies Used
 * [Visual Studio Code](https://code.visualstudio.com/) ~ Development environment
+* [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) ~ v4.6 Grid system, navbar & popup
 * [Git](https://git-scm.com/) ~ Version control system
 * [GitHub](https://github.com/) ~ Project repository host
 * [Balsamiq](https://balsamiq.com/) ~ Wireframe design
