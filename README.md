@@ -58,6 +58,10 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 ### Features Left to Implement
 
 ## Technologies Used
+* [Visual Studio Code](https://code.visualstudio.com/) ~ Development environment
+* [Git](https://git-scm.com/) ~ Version control system
+* [GitHub](https://github.com/) ~ Project repository host
+* [Balsamiq](https://balsamiq.com/) ~ Wireframe design
 
 ## Testing
 ### Automated Testing
