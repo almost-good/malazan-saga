@@ -48,7 +48,7 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 * [Index Page Wireframe](./docs/wireframes/index-wireframe.pdf)
 * [Author Page Wireframe](./docs/wireframes/author-wireframe.pdf)
 * [Collection Page Wireframe](./docs/wireframes/collections-wireframe.pdf)
-* [Reading-Order Page Wireframe](./docs/wireframes/collections-wireframe.pdf)
+* [Reading-Order Page Wireframe](./docs/wireframes/reading-order-wireframe.pdf)
 * [Sign Up Page Wireframe](./docs/wireframes/signup-wireframe.pdf)
 #### Color Scheme
 #### Typography
