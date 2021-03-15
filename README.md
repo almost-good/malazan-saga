@@ -75,6 +75,8 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 ### Local
 
 ## Credits
+### Media
+* Hero Image ~ Image sourced from Corporal--Nobbs on Devianart [Malazan World Map](https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/)
 ### Code
 * [Bootstrap](https://getbootstrap.com/docs/4.6/components/navbar/) ~ Navigation
 
