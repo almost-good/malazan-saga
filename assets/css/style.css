@@ -6,5 +6,17 @@ header {
 
     /* Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ */
 .hero-image {
+    background: 
+        #755a3c
+        url('../images/malazan-world-map.jpg')
+        center / auto
+        no-repeat;
+    min-height: 600px;
+}
 
+.hero-text {
+    background-color: #dbc69799;
+    position: relative;
+    top: 60px;
+    padding: 30px 100px 30px 30px;
 }
