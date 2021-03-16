@@ -77,7 +77,8 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 ## Credits
 ### Media
 * Hero Image ~ Image sourced from Corporal--Nobbs on Devianart [Malazan World Map](https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/)
-* Steven Erikson Picture ~ Image sourced from Wikimedia [Steven Erikson](https://commons.wikimedia.org/wiki/File:Steven_Erikson_-_Lucca_Comics_%26_Games_2016.jpg)
+* Steven Erikson Photograph ~ Image sourced from Wikimedia [Steven Erikson](https://commons.wikimedia.org/wiki/File:Steven_Erikson_-_Lucca_Comics_%26_Games_2016.jpg)
+* Ian Cameron Esslemont Photograph ~ Image sourced from Fandom website [Ian C. Esslemont](https://malazan.fandom.com/wiki/Ian_C._Esslemont) and is used in line with Fair Use law 
 ### Code
 * [Bootstrap](https://getbootstrap.com/docs/4.6/components/navbar/) ~ Navigation
 
