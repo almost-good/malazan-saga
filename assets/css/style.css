@@ -20,3 +20,8 @@ header {
     top: 60px;
     padding: 30px 100px 30px 30px;
 }
+
+a > img {
+    max-width: 300px;
+    max-height: 300px;
+}
