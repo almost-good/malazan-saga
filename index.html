@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" >
 
     <!-- Bootstrap v4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- Header & Navbar -->
-    <header class="fixed-top">
-        <nav class="navbar navbar-light bg-light navbar-expand-lg">
-            <a href="index.html" class="navbar-brand mr-auto"><span class="icon-helmet"></span> Malazan Saga</a>
+    <header class="fixed-top" >
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <a href="index.html" class="navbar-brand font-title">Malazan Saga <span class="icon-helmet icon-helmet-size"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,7 +35,8 @@
     <!-- /.header & navbar -->
 
     <!-- Hero -->
-    <section class="container-fluid hero-image">
+    <div class=" hero-image">    
+    <section class="container-fluid">
         <!-- Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ --> 
         <div class="row">
             <div class="col-12">
@@ -46,7 +47,7 @@
                         <p><small>- Gothos, Toll the Hounds, Steven Erikson</small></p>
                     </blockquote>
                     <span class="icon-helmet icon-size"></span>
-                    <h1 class="title">Bear the dreams and adventures of Malazan
+                    <h1 class="font-title">Bear the dreams and adventures of Malazan
                         <br>Carry them with you at all times!</h1>
                     <p><mark>Malazan Newsletter is rich with wonderfull quotes!</mark></p>
                     <a class="btn btn-light btn-lg" href="#" role="button">Subscribe</a>
@@ -54,6 +55,7 @@
             </div>
         </div>
     </section>
+</div>
     <!-- /.hero -->
 
     <!-- Authors -->

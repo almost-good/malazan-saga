@@ -1,25 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap');
 
-header {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  overflow-x: hidden;
 }
 
 /*------------------------------------------ Typography */
-.title {
+
+.font-title {
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
 .icon-helmet {
-  background: url('../icon/helmet.svg');
-  height: 20px;
-  width: 20px;
+  background-image: url('../icon/helmet.svg');
+  background-repeat: no-repeat;
   display: inline-block;
+
+}
+.icon-helmet-size {
+  height: 0.5em;
+  width: 0.5em;
+  margin-bottom: 0.1em;
+}
+
+/*------------------------------------------ Colors */
+
+header {
+  background-color: #dbc697;
 }
 
 /*------------------------------------------ Header & Navbar section */
+/*nav a {
+  text-align: center;
+}*/
+
+.navbar-brand {
+  font-size: 8vw;
+  text-transform: uppercase;
+  letter-spacing: -0.3vw;
+}
+
 .quote-text{
   display: block;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 5vw;
+  }
 }
 
 /*------------------------------------------ Hero section */
@@ -33,13 +67,19 @@ header {
         no-repeat;
     background-attachment: fixed;
     min-height: 670px;
+    right:0;
+    left:0;
+    margin:0  !important;
 }
 
 .hero-text {
     background-color: #dbc69799;
     position: relative;
-    top: 60px;
-    padding: 30px 100px 30px 30px;
+    /* top: 60px;
+    padding: 30px 100px 30px 30px; */
+    top:60px;
+    margin:auto;
+
     text-align: center;
 }
 
@@ -51,3 +91,5 @@ img {
   max-height: 300px;
   max-width: 300px;
 }
+
+
