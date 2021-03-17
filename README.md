@@ -78,9 +78,12 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 ### Media
 * Images
     * Hero Image ~ Image sourced from Corporal--Nobbs on Devianart [Malazan World Map](https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/)
-* Author Images
+* Photographs of people
     * Steven Erikson Photograph ~ Image sourced from Wikimedia [Steven Erikson](https://commons.wikimedia.org/wiki/File:Steven_Erikson_-_Lucca_Comics_%26_Games_2016.jpg)
     * Ian Cameron Esslemont Photograph ~ Image sourced from Fandom website [Ian C. Esslemont](https://malazan.fandom.com/wiki/Ian_C._Esslemont) and is used in line with Fair Use law
+    * Stephen R. Donaldson Photograph ~ Image sourced from Wikimedia [Stephen R. Donaldson](https://upload.wikimedia.org/wikipedia/commons/7/78/Stephen_R_Donaldson_%28cropped%29.jpg)
+    * Glen Cook ~ Image sourced from Wikimedia [Glen Cook](https://commons.wikimedia.org/wiki/File:Utos107-Glen_Cook.jpg)
+    * Michael A. Stackpole ~ Image sourced from Wikimedia [Michael A. Stackpole](https://commons.wikimedia.org/wiki/File:Michael_Stackpole_by_Gage_Skidmore.jpg)
 * Book Images
     * Complete Malazan Book of the Fallen Book Cover ~ Image sourced from Goodreads [Malazan Book of the Fallen](https://www.goodreads.com/book/show/20345548-the-complete-malazan-book-of-the-fallen)
     * Night of Knives Book Cover ~ Image sourced from Goodreads [Night of Knives](https://www.goodreads.com/book/show/458394.Night_of_Knives)
