@@ -15,16 +15,16 @@
         url('../images/malazan-world-map.jpg')
         center / auto
         no-repeat;
+    background-attachment: fixed;
     min-height: 670px;
 }
-/*
+
 .hero-text {
     background-color: #dbc69799;
     position: relative;
     top: 60px;
     padding: 30px 100px 30px 30px;
 }
-*/
 
 img {
   max-height: 300px;
