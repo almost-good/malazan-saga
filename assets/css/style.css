@@ -16,6 +16,12 @@ header {
   display: inline-block;
 }
 
+/*------------------------------------------ Header & Navbar section */
+.quote-text{
+  display: block;
+  text-align: center;
+}
+
 /*------------------------------------------ Hero section */
 
     /* Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ */
