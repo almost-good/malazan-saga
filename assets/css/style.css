@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap');
+
+header {
+  margin: 0;
+}
+
 /*------------------------------------------ Typography */
+.title {
+  font-family: 'IM Fell DW Pica SC', serif;
+}
+
 .icon-helmet {
   background: url('../icon/helmet.svg');
   height: 20px;
@@ -6,7 +16,7 @@
   display: inline-block;
 }
 
-/*------------------------------------------ Hero image */
+/*------------------------------------------ Hero section */
 
     /* Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ */
 .hero-image {
@@ -24,6 +34,11 @@
     position: relative;
     top: 60px;
     padding: 30px 100px 30px 30px;
+    text-align: center;
+}
+
+.hero-text > h1 {
+  font-size: 46px;
 }
 
 img {
