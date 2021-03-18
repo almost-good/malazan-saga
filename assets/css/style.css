@@ -11,8 +11,11 @@ body {
 }
 
 /*------------------------------------------ Typography */
+body {
+  font-family: 'Lato', serif;
+}
 
-.font-title {
+.font-highlight {
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
@@ -29,15 +32,14 @@ body {
 }
 
 /*------------------------------------------ Colors */
-
 header {
   background-color: #dbc697;
 }
 
 /*------------------------------------------ Header & Navbar section */
-/*nav a {
-  text-align: center;
-}*/
+.navbar {
+  padding: 0 16px;
+}
 
 .navbar-brand {
   font-size: 8vw;
@@ -45,14 +47,50 @@ header {
   letter-spacing: -0.3vw;
 }
 
+header ul {
+  font-size: 16px;
+  font-weight: 400;
+  align-items: baseline;
+}
+
+.nav-item {
+  margin-left: 3px;
+}
+
+header li:last-child {
+  font-size: 24px;
+}
+
 .quote-text{
   display: block;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  .navbar {
+    padding-top: 0;
+  }
   .navbar-brand {
-    font-size: 5vw;
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 0;
+  }
+  .navbar-brand {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding-top: 20px;
+    height: 90px;
+  }
+  .navbar-brand {
+    font-size: 4vw;
   }
 }
 
