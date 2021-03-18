@@ -12,7 +12,7 @@ body {
 
 /*------------------------------------------ Typography */
 body {
-  font-family: 'Lato', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .font-highlight {
@@ -25,9 +25,14 @@ body {
   display: inline-block;
 
 }
-.icon-helmet-size {
+.icon-helmet-sm {
   height: 0.5em;
   width: 0.5em;
+  margin-bottom: 0.1em;
+}
+.icon-helmet-lg {
+  height: 5em;
+  width: 5em;
   margin-bottom: 0.1em;
 }
 
@@ -37,7 +42,6 @@ header {
 }
 
 /*------------------------------------------ Header & Navbar section */
-
 .navbar {
   padding: 0 16px;
 }
@@ -58,6 +62,7 @@ header {
 .navbar-nav {
   font-size: 16px;
   font-weight: 400;
+  letter-spacing: 1px;
   align-items: baseline;
 }
 
@@ -81,12 +86,65 @@ header .nav-item:last-child {
   vertical-align: super;
 }
 
+/*------------------------------------------ Hero section */
+    /* Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ */
+.hero-image {
+  right:0;
+  left:0;
+  margin:0  !important;
+  padding-top: 66px;
+  background: 
+        #755a3c
+        url('../images/malazan-world-map.jpg')
+        center / auto
+        no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.hero-img-text-container {
+  padding: 0;
+}
+
+.hero-text {
+    background-color: #dbc69799;
+    /*position: relative;
+    /* top: 60px;
+    padding: 30px 100px 30px 30px; 
+    top:60px;*/
+    margin:auto;
+    text-align: center;
+}
+
+.hero-text > .icon-helmet {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.hero-text .font-highlight {
+  font-size: 46px;
+  letter-spacing: -1px;
+}
+
+.hero-text > h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
 @media (min-width: 576px) {
   .navbar {
     padding-top: 0;
   }
   .navbar-brand {
     font-size: 6vw;
+  }
+  .hero-image {
+    min-height: 80vh;
   }
 }
 
@@ -97,12 +155,18 @@ header .nav-item:last-child {
   .navbar-text {
     padding-top: 2px;
   }
+  .hero-image{
+    padding-top: 68px;
+  }
 }
 
 @media (min-width: 992px) {
   .navbar-text {
     padding-top: 0;
     padding-left: 80px;
+  }
+  .hero-image{
+    padding-top: 78px;
   }
 }
 
@@ -114,42 +178,9 @@ header .nav-item:last-child {
     padding-top: 2px;
     padding-left: 160px;
   }
+  .hero-image{
+    padding-top: 96px;
+    min-height: 82vh;
+  }
 }
-
-/*------------------------------------------ Hero section */
-
-    /* Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ */
-.hero-image {
-    background: 
-        #755a3c
-        url('../images/malazan-world-map.jpg')
-        center / auto
-        no-repeat;
-    background-attachment: fixed;
-    min-height: 670px;
-    right:0;
-    left:0;
-    margin:0  !important;
-}
-
-.hero-text {
-    background-color: #dbc69799;
-    position: relative;
-    /* top: 60px;
-    padding: 30px 100px 30px 30px; */
-    top:60px;
-    margin:auto;
-
-    text-align: center;
-}
-
-.hero-text > h1 {
-  font-size: 46px;
-}
-
-img {
-  max-height: 300px;
-  max-width: 300px;
-}
-
 
