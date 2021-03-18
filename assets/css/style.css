@@ -37,33 +37,48 @@ header {
 }
 
 /*------------------------------------------ Header & Navbar section */
+
 .navbar {
   padding: 0 16px;
 }
 
 .navbar-brand {
+  padding-bottom: 0;
+  line-height: 16px;
   font-size: 8vw;
-  text-transform: uppercase;
   letter-spacing: -0.3vw;
+  text-transform: uppercase;
 }
 
-header ul {
+.navbar-toggler-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar-nav {
   font-size: 16px;
   font-weight: 400;
   align-items: baseline;
 }
 
 .nav-item {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
-header li:last-child {
+header .nav-item:last-child {
   font-size: 24px;
 }
 
-.quote-text{
-  display: block;
-  text-align: center;
+.navbar-quote{
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+}
+
+.navbar-text {
+  padding: 0 0 0 40px;
+  line-height: 16px;
+  vertical-align: super;
 }
 
 @media (min-width: 576px) {
@@ -75,22 +90,29 @@ header li:last-child {
   }
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    padding-top: 0;
-  }
+@media (min-width: 768px) {
   .navbar-brand {
     font-size: 4vw;
+  }
+  .navbar-text {
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-text {
+    padding-top: 0;
+    padding-left: 80px;
   }
 }
 
 @media (min-width: 1200px) {
   .navbar {
-    padding-top: 20px;
-    height: 90px;
+    padding-top: 16px;
   }
-  .navbar-brand {
-    font-size: 4vw;
+  .navbar-text {
+    padding-top: 2px;
+    padding-left: 160px;
   }
 }
 
