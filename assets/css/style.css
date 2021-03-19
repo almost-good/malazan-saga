@@ -15,7 +15,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.font-highlight {
+.font-special {
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
@@ -44,7 +44,9 @@ header {
 .navbar {
   padding: 0 16px;
 }
-
+.navbar-collapse {
+  display: flex;
+}
 .navbar-brand {
   padding-bottom: 0;
   line-height: 16px;

@@ -70,6 +70,7 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 ### Bugs
 * Hamburger collapse show: Items would not align to the right side of a browser.
     * Tried placing mr-auto, justify-content-end, many kind of item and text alignments to get them to move at least a bit ~ no success 
+    * FIX: Added display property to div that consists of nav-items which collapse from hamburger menu. Value was "block" and it has been changed to "flex". After that I added ml-auto class to HTML "ul" tag and it aligned to right side of browser window nicely.
 
 ## Deployment
 ### Project Creation
