@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-/*------------------------------------------ Typography */
+/*------------------------------------------- Typography */
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -23,17 +23,16 @@ body {
   background-image: url('../icon/helmet.svg');
   background-repeat: no-repeat;
   display: inline-block;
-
+  margin-bottom: 0.1em;
 }
 .icon-helmet-sm {
   height: 0.5em;
   width: 0.5em;
-  margin-bottom: 0.1em;
+
 }
 .icon-helmet-lg {
   height: 5em;
   width: 5em;
-  margin-bottom: 0.1em;
 }
 
 /*------------------------------------------ Colors */
@@ -41,7 +40,7 @@ header {
   background-color: #dbc697;
 }
 
-/*------------------------------------------ Header & Navbar section */
+/*------------------------------------------- Header & Navbar section */
 .navbar {
   padding: 0 16px;
 }
@@ -49,7 +48,7 @@ header {
 .navbar-brand {
   padding-bottom: 0;
   line-height: 16px;
-  font-size: 8vw;
+  font-size: 2rem;
   letter-spacing: -0.3vw;
   text-transform: uppercase;
 }
@@ -74,16 +73,12 @@ header .nav-item:last-child {
   font-size: 24px;
 }
 
-.navbar-quote{
-  font-weight: 300;
-  font-style: italic;
-  text-align: left;
-}
+.navbar-quote {
+  margin-bottom: 0;
+  padding-left: 40px; /*come back after adjusting logo size*/
+  display: inline-block;
 
-.navbar-text {
-  padding: 0 0 0 40px;
-  line-height: 16px;
-  vertical-align: super;
+  text-align: left;
 }
 
 /*------------------------------------------ Hero section */
@@ -143,6 +138,10 @@ img {
   .navbar-brand {
     font-size: 6vw;
   }
+  .navbar-quote {
+    padding-left: 70px;
+  }
+
   .hero-image {
     min-height: 80vh;
   }
@@ -165,6 +164,9 @@ img {
     padding-top: 0;
     padding-left: 80px;
   }
+  .navbar-quote {
+    padding-left: 200px;
+  }
   .hero-image{
     padding-top: 78px;
   }
@@ -177,6 +179,9 @@ img {
   .navbar-text {
     padding-top: 2px;
     padding-left: 160px;
+  }
+  .navbar-quote {
+    padding-left: 400px;
   }
   .hero-image{
     padding-top: 96px;
