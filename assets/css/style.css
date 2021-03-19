@@ -11,7 +11,7 @@ body {
 }
 
 /*------------------------------------------- Typography */
-body {
+body, .font-text {
   font-family: 'Lato', sans-serif;
 }
 
@@ -25,6 +25,7 @@ body {
   display: inline-block;
   margin-bottom: 0.1em;
 }
+
 .icon-helmet-sm {
   height: 0.5em;
   width: 0.5em;
@@ -44,9 +45,7 @@ header {
 .navbar {
   padding: 0 16px;
 }
-.navbar-collapse {
-  display: flex;
-}
+
 .navbar-brand {
   padding-bottom: 0;
   line-height: 16px;
@@ -55,29 +54,37 @@ header {
   text-transform: uppercase;
 }
 
-.navbar-toggler-icon {
-  height: 30px;
-  width: 30px;
+.navbar-toggler {
+  margin-top: 15px;
+  padding: 4px 6px;
+  border: 2px solid transparent;
+  border-radius: 0.2rem;
+  font-size: 1rem;
 }
 
 .navbar-nav {
-  font-size: 16px;
-  font-weight: 400;
+  margin-right: 25px;
+  font-size: 1rem;
   letter-spacing: 1px;
-  align-items: baseline;
+  text-align: right;
 }
 
 .nav-item {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
-header .nav-item:last-child {
-  font-size: 24px;
+.nav-item:last-child {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  padding-bottom: 2px;
+  line-height: 20px;
 }
 
 .navbar-quote {
   margin-bottom: 0;
-  padding-left: 40px; /*come back after adjusting logo size*/
+  padding-left: 40px;
   display: inline-block;
 
   text-align: left;
@@ -134,17 +141,13 @@ img {
 }
 
 @media (min-width: 576px) {
-  .navbar {
-    padding-top: 0;
-  }
   .navbar-brand {
     font-size: 2.5rem;
   }
-
   .navbar-quote {
     padding-left: 110px;
   }
-
+/*----*/
   .hero-image {
     min-height: 80vh;
   }
@@ -154,35 +157,46 @@ img {
   .navbar-brand {
     font-size: 3rem;
   }
-
   .navbar-quote {
     padding-left: 150px;
   }
+/*----*/
   .hero-image{
     padding-top: 68px;
   }
 }
 
 @media (min-width: 992px) {
+  .navbar {
+    padding-top: 16px;
+  }
+  .navbar-nav {
+    margin-right: 5px;
+  }
   .navbar-quote {
+    padding-top: 2px;
     padding-left: 175px;
   }
+/*-----*/
   .hero-image{
     padding-top: 78px;
   }
 }
 
 @media (min-width: 1200px) {
-  .navbar {
-    padding-top: 16px;
-  }
   .navbar-brand {
     font-size: 4rem;
   }
-
+  .navbar-nav {
+    margin-right: 25px;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
   .navbar-quote {
     padding-left: 330px;
   }
+/*-----*/
   .hero-image{
     padding-top: 96px;
     min-height: 82vh;
