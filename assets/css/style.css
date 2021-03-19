@@ -136,10 +136,11 @@ img {
     padding-top: 0;
   }
   .navbar-brand {
-    font-size: 6vw;
+    font-size: 2.5rem;
   }
+
   .navbar-quote {
-    padding-left: 70px;
+    padding-left: 110px;
   }
 
   .hero-image {
@@ -149,10 +150,11 @@ img {
 
 @media (min-width: 768px) {
   .navbar-brand {
-    font-size: 4vw;
+    font-size: 3rem;
   }
-  .navbar-text {
-    padding-top: 2px;
+
+  .navbar-quote {
+    padding-left: 150px;
   }
   .hero-image{
     padding-top: 68px;
@@ -160,12 +162,8 @@ img {
 }
 
 @media (min-width: 992px) {
-  .navbar-text {
-    padding-top: 0;
-    padding-left: 80px;
-  }
   .navbar-quote {
-    padding-left: 200px;
+    padding-left: 175px;
   }
   .hero-image{
     padding-top: 78px;
@@ -176,12 +174,12 @@ img {
   .navbar {
     padding-top: 16px;
   }
-  .navbar-text {
-    padding-top: 2px;
-    padding-left: 160px;
+  .navbar-brand {
+    font-size: 4rem;
   }
+
   .navbar-quote {
-    padding-left: 400px;
+    padding-left: 330px;
   }
   .hero-image{
     padding-top: 96px;
