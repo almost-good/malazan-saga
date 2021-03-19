@@ -100,26 +100,22 @@ header {
         center / auto
         no-repeat
         fixed;
-  min-height: 100vh;
-  line-height: 1.2em;
+  height: 100vh;
+
   /*right:0;
   left:0;/*
   margin:0  !important;*/
 }
 
-.hero-img-text-container {
+.container-fluid {
   padding: 0;
 }
 
 .hero-text {
   background-color: #dbc597e1;
-    /*background-color: #dbc69799;*/
-    /*position: relative;
-    /* top: 60px;
-    padding: 30px 100px 30px 30px; 
-    top:60px;*/
-    margin:auto;
-    text-align: center;
+  margin:auto;
+  text-align: center;
+  line-height: 1.2em;
 }
 
 .hero-text > .icon-helmet {
@@ -153,9 +149,8 @@ img {
   .navbar-quote {
     padding-left: 110px;
   }
-/*----*/
   .hero-image {
-    min-height: 80vh;
+    height: 82vh;
   }
 }
 
@@ -179,7 +174,6 @@ img {
     padding-top: 2px;
     padding-left: 175px;
   }
-/*-----*/
   .hero-image{
     padding-top: 76px;
   }
@@ -198,10 +192,8 @@ img {
   .navbar-quote {
     padding-left: 330px;
   }
-/*-----*/
   .hero-image{
     padding-top: 85px;
-    min-height: 82vh;
   }
 }
 
