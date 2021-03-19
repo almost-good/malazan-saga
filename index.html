@@ -65,11 +65,11 @@ $('.carousel .carousel-item').each(function() {
                 <div class="col-12">
                     <div class="hero-text">
                         <span class="icon-helmet icon-helmet-lg"></span>
-                        <h1><span class="font-special">Bear the dreams and adventures of Malazan!</span>
-                            <br><span class="d-none d-sm-inline">Together Forever</span></h1>
-                        <p><strong>Malazan Newsletter is rich with wonderfull quotes!</strong></p>
-                        <a class="btn btn-light btn-lg" href="#" role="button">Subscribe</a>
-                        <blockquote>
+                        <h1><span class="font-special">Bear the dreams and adventures of Malazan!</span></h1>
+                        <p class="d-none">Together forever
+                        <br><strong>Malazan Newsletter is rich with wonderful quotes!</strong></p>
+                        <a class="btn btn-sm font-special" href="#" role="button">Subscribe</a>
+                        <blockquote class="hero-quote">
                             <p>"I greet you as Guests and so will not crush the life from you and devour your souls with peals of laughter.
                                 <br>No, instead, I will make some tea."</p>
                             <p><small>- Gothos, Toll the Hounds, Steven Erikson</small></p>
@@ -141,7 +141,43 @@ $('.carousel .carousel-item').each(function() {
         </div>
     </section>
     <!-- /.collections -->
-    <!-- Credits: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html -->
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <!-- Credits: Image stephen-r-donaldson.jpg sourced from Wikimedia https://upload.wikimedia.org/wikipedia/commons/7/78/Stephen_R_Donaldson_%28cropped%29.jpg-->
+        <!-- Credits: Image glen-cook sourced from Wikimedia https://commons.wikimedia.org/wiki/File:Utos107-Glen_Cook.jpg-->
+        <!-- Credits: Image michael-a-stackpole.jpg sourced from Wikimedia https://commons.wikimedia.org/wiki/File:Michael_Stackpole_by_Gage_Skidmore.jpg-->
+        <div class="row">
+            <div class="col-12">
+                <h2>Reviews</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <img src="./assets/images/testimonials/stephen-r-donaldson.jpg" alt="Stephen R. Donaldson writing his autograph.">
+                <blockquote cite="https://www.azquotes.com/quote/659442">
+                    <p>"Steven Erikson is an extraordinary writer... My advice to anyone who might listen to me is treat yourself to 
+                        <em>Gardens of the Moon</em>."</p>
+                    <p><small>- Stephen <abbr title="Reeder">R.</abbr> Donaldson</small></p>
+                </blockquote>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="./assets/images/testimonials/glen-cook.jpg" alt="Glen Cook in sitting position.">
+                <blockquote cite="https://www.frugalfrigate.com/book/9780765310026">
+                    <p>"I stand slack-jawed in awe of The Malazan Book of the Fallen. This masterwork of imagination may be the high water mark of epic fantasy."</p>
+                    <p><small>- Glen Cook</small></p>
+                </blockquote>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="./assets/images/testimonials/michael-a-stackpole.jpg" alt="Michael A. Stackpole speaking at convection.">
+                <blockquote>
+                    <p>"Rare is the writer who so fluidly combines mythic power and depth of world with fully realized characters and thrilling action, but Erikson manages it spectacularly."</p>
+                    <p><small>- Michael <abbr title="Austin">A.</abbr> Stackpole</small></p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <!-- /.reviews -->
     <div class="container text-center mb-5">        
         <div class="row mx-auto my-auto">
             <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
@@ -190,7 +226,7 @@ $('.carousel .carousel-item').each(function() {
                 </div>
                 </a>
                 <a class="carousel-control-next w-auto" href="#myCarousel" role="button" data-slide="next">
-                <div>
+                  <div>
                         <i class="fas fa-chevron-right"></i>
                     <span class="sr-only">Next</span>
                 </div>
@@ -199,42 +235,6 @@ $('.carousel .carousel-item').each(function() {
             </div>
         </div>
     </div>
-    <!-- Reviews -->
-    <section class="reviews">
-        <!-- Credits: Image stephen-r-donaldson.jpg sourced from Wikimedia https://upload.wikimedia.org/wikipedia/commons/7/78/Stephen_R_Donaldson_%28cropped%29.jpg-->
-        <!-- Credits: Image glen-cook sourced from Wikimedia https://commons.wikimedia.org/wiki/File:Utos107-Glen_Cook.jpg-->
-        <!-- Credits: Image michael-a-stackpole.jpg sourced from Wikimedia https://commons.wikimedia.org/wiki/File:Michael_Stackpole_by_Gage_Skidmore.jpg-->
-        <div class="row">
-            <div class="col-12">
-                <h2>Reviews</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <img src="./assets/images/testimonials/stephen-r-donaldson.jpg" alt="Stephen R. Donaldson writing his autograph.">
-                <blockquote cite="https://www.azquotes.com/quote/659442">
-                    <p>"Steven Erikson is an extraordinary writer... My advice to anyone who might listen to me is treat yourself to 
-                        <em>Gardens of the Moon</em>."</p>
-                    <p><small>- Stephen <abbr title="Reeder">R.</abbr> Donaldson</small></p>
-                </blockquote>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="./assets/images/testimonials/glen-cook.jpg" alt="Glen Cook in sitting position.">
-                <blockquote cite="https://www.frugalfrigate.com/book/9780765310026">
-                    <p>"I stand slack-jawed in awe of The Malazan Book of the Fallen. This masterwork of imagination may be the high water mark of epic fantasy."</p>
-                    <p><small>- Glen Cook</small></p>
-                </blockquote>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="./assets/images/testimonials/michael-a-stackpole.jpg" alt="Michael A. Stackpole speaking at convection.">
-                <blockquote>
-                    <p>"Rare is the writer who so fluidly combines mythic power and depth of world with fully realized characters and thrilling action, but Erikson manages it spectacularly."</p>
-                    <p><small>- Michael <abbr title="Austin">A.</abbr> Stackpole</small></p>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-    <!-- /.reviews -->
 
     <!-- Bootstrap v4.6 -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

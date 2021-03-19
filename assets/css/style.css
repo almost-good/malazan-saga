@@ -101,10 +101,6 @@ header {
         no-repeat
         fixed;
   height: 100vh;
-
-  /*right:0;
-  left:0;/*
-  margin:0  !important;*/
 }
 
 .container-fluid {
@@ -112,26 +108,55 @@ header {
 }
 
 .hero-text {
-  background-color: #dbc597e1;
-  margin:auto;
+  margin: 75px; /*sm 75, ss25*/
+  background-color: #dbc597ce;
   text-align: center;
-  line-height: 1.2em;
+  border-radius: 5%;
 }
 
 .hero-text > .icon-helmet {
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
-.hero-text .font-highlight {
-  font-size: 46px;
-  letter-spacing: -1px;
-}
-
 .hero-text > h1 {
-  font-size: 24px;
+  font-size: 2.5rem;
   letter-spacing: 2px;
 }
+
+.hero-text > a {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+}
+
+.hero-quote {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.hero-quote > p:first-child {
+  margin-bottom: 0px;
+}
+
+.hero-quote > p:last-child {
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+
+/*.hero-text > p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}*/
+
+
 
 
 /*------------------------------------------ Temporary */
