@@ -68,6 +68,8 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 ### Automated Testing
 ### Manual Testing
 ### Bugs
+* Hamburger collapse show: Items would not align to the right side of a browser.
+    * Tried placing mr-auto, justify-content-end, many kind of item and text alignments to get them to move at least a bit ~ no success 
 
 ## Deployment
 ### Project Creation
