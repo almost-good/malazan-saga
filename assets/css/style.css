@@ -261,11 +261,42 @@ i {
 }
 
 /*------------------------------------------ Testimonials */
-
+.testimonials {
+  padding: 2vh 5vw 10vh 5vw;
+  text-align: center;
+}
 
 .testimonials img {
-  max-height: 300px;
-  max-width: 300px;
+  height: 200px;
+  width: 180px;
+  border: 5px solid #4b3a15ce;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.testimonials p {
+  line-height: 1.2rem;
+  padding-top: 5vh;
+}
+
+.testimonials blockquote > p:first-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+.testimonials blockquote > p:last-child {
+  margin-left: 20vw;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 5vh;
+}
+
+.testimonials small {
+  font-weight: 600;
+}
+.testimonials abbr {
+  font-weight: 900;
+  text-decoration: none;
+  border: none;
 }
 
 /*------------------------------------------ Media Queries */
@@ -299,6 +330,10 @@ i {
   .hero-quote {
     margin-left: 10vw;
     margin-right: 30vw;
+  }
+  /* Testimonials */
+  .testimonials blockquote > p:last-child {
+    margin-left: 10vw;
   }
 }
 
@@ -401,12 +436,6 @@ i {
   .carousel-inner .carousel-item-prev {
       transform: translateX(-33%);
   }
-  /*.fa-chevron-left {
-    margin-left: -1vh;
-  }
-  .fa-chevron-right {
-    margin-right: -1vh;
-  }*/
 }
 
 @media (max-width: 767px) {
