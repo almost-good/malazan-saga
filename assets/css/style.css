@@ -19,6 +19,17 @@ body {
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
+h3 {
+  padding-bottom: 1rem;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
 .icon-helmet {
   background-image: url('../icon/helmet.svg');
   background-repeat: no-repeat;
@@ -29,8 +40,13 @@ body {
 .icon-helmet-sm {
   height: 0.5em;
   width: 0.5em;
-
 }
+
+.icon-helmet-md {
+  height: 2.5em;
+  width: 2.5em;
+}
+
 .icon-helmet-lg {
   height: 5em;
   width: 5em;
@@ -162,6 +178,65 @@ header {
   text-transform: capitalize;
 }
 
+/*------------------------------------------ Authors section */
+.authors {
+  padding: 5vh 5vw;
+  text-align: center;
+}
+
+.authors-container {
+  padding-top: 4vh;
+}
+
+.author-img {
+  height: 200px;
+  width: 180px;
+  border: 5px solid #4b3a15ce;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.authors h4 {
+  padding-top: 3vh;
+}
+
+.authors p {
+  text-align: justify;
+  line-height: 1.2rem;
+  padding-top: 1vh;
+}
+
+.authors strong {
+  font-style: italic;
+}
+
+.authors abbr {
+  font-weight: 900;
+  text-decoration: none;
+  border: none;
+}
+
+.author-helmet-icon {
+  margin-top: 3vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-line {
+  border-left: 2px solid black; 
+  height: 30%; 
+  position:absolute; 
+  left: 50%;
+}
+
+.top {
+  bottom: 70%;
+}
+
+.bot {
+  top: 70%;
+}
+
 /*------------------------------------------ Temporary */
 img {
   max-height: 300px;
@@ -217,7 +292,7 @@ img {
     margin-right: 15vw;
   }
   .hero-quote {
-    margin-right: 25vw;
+    margin-right: 28vw;
   }
 }
 
@@ -238,8 +313,6 @@ img {
     padding-top: 85px;
   }
   .hero-text {
-    margin-left: 20vw;
-    margin-right: 20vw;
     margin-top: 8vh;
   }
   .hero-text > h1 {
@@ -248,9 +321,11 @@ img {
   .hero-text > a {
     font-size: 2rem;
   }
+  .author-img {
+    height: 250px;
+    width: 230px;
+  }
 }
-
-
 /*------------------------------------------ Carousel */
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-right.active,
