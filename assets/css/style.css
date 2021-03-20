@@ -8,6 +8,7 @@
 body {
   position: absolute;
   overflow-x: hidden;
+  margin-bottom: 100px;
 }
 
 /*------------------------------------------- Typography */
@@ -246,7 +247,7 @@ header {
   font-size: 1.25rem;
 }
 
-i {
+.collections i {
   color:black;
   font-size: 1.5rem; 
   background-color: white;
@@ -260,9 +261,14 @@ i {
   width: 200px;
 }
 
+.collections blockquote {
+  margin-bottom: 0;
+}
+
+
 /*------------------------------------------ Testimonials */
 .testimonials {
-  padding: 2vh 5vw 10vh 5vw;
+  padding: 2vh 5vw 7vh 5vw;
   text-align: center;
 }
 
@@ -298,6 +304,27 @@ i {
   text-decoration: none;
   border: none;
 }
+
+
+/*------------------------------------------ Footer & Social Links section*/
+footer {
+  display: flex;
+ /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;*/
+  background-color: #dbc697;
+}
+
+/*.social-links {
+  background-color: #dbc697;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+  margin-top: 50px;
+}*/
+
 
 /*------------------------------------------ Media Queries */
 
