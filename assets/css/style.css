@@ -12,14 +12,23 @@ body {
 }
 
 /*------------------------------------------- Typography */
+
 body {
   font-family: 'Lato', sans-serif;
 }
 
-.font-special, h3{
+.font-switch, h3 {
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
+.nav-item {
+  font-size: 1rem;
+}
+
+.title-size, .nav-subscribe {
+  font-size: 1.5rem;
+}
+/**** to do ****/
 h3 {
   padding-bottom: 10vh;
   font-size: 2.25rem;
@@ -30,6 +39,29 @@ h3 {
 .lowercase {
   text-transform: lowercase;
 }
+
+
+
+
+/*------------------------------------------ Colors */
+
+header {
+  background-color: #dbc697;
+}
+
+/*------------------------------------------ Box model */
+
+.navbar {
+  padding-top: 0;
+}
+.navbar, .navbar-brand {
+  padding-bottom: 0;
+}
+.nav-quote {
+  margin-bottom: 0;
+}
+
+/*------------------------------------------ Icons and Buttons */
 
 .icon-helmet {
   background-image: url('../icon/helmet.svg');
@@ -43,6 +75,7 @@ h3 {
   width: 0.5em;
 }
 
+/*
 .icon-helmet-md {
   height: 2.5em;
   width: 2.5em;
@@ -51,61 +84,55 @@ h3 {
 .icon-helmet-lg {
   height: 5em;
   width: 5em;
+}*/
+
+.nav-btn {
+  margin-top: 15px;
+  padding: 4px 6px;
+  border-radius: 5px; /*border-rad-5px*/
+  /*******************************/
+  font-size: 1rem; /*font-size-1*/
+  /******************************/
 }
 
-/*------------------------------------------ Colors */
-header {
-  background-color: #dbc697;
+#nav-btn-style {
+  border: 3px solid rgb(128, 32, 32);
 }
-/*------------------------------------------ Box model */
 
 /*------------------------------------------- Header & Navbar section */
+
 .navbar {
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .navbar-brand {
-  padding-bottom: 0;
-  line-height: 16px;
-  font-size: 2rem;
+  line-height: 1rem; /*line-height-1*/
   letter-spacing: -0.3vw;
-  text-transform: uppercase;
-}
-
-.navbar-toggler {
-  margin-top: 15px;
-  padding: 4px 6px;
-  border: 2px solid transparent;
-  border-radius: 0.2rem;
-  font-size: 1rem;
+  text-transform: uppercase; /*text-transform-upper*/
 }
 
 .navbar-nav {
   margin-right: 25px;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-align: right;
+  text-align: right; /*text-align-right*/
 }
 
 .nav-item {
-  margin-left: 8px;
+  margin-left: 1vw;
+  letter-spacing: 1px; /*letter-spacing-1px*/
 }
 
-.nav-item:last-child {
-  font-size: 1.5rem;
+.nav-subscribe {
+  padding-bottom: 1vh;
 }
 
 .nav-link {
   padding-bottom: 2px;
-  line-height: 20px;
+  line-height: 3vh; 
 }
 
-.navbar-quote {
-  margin-bottom: 0;
-  padding-left: 40px;
-  display: inline-block;
-
-  text-align: left;
+.nav-quote {
+  padding-left: 8vw;
 }
 
 /*------------------------------------------ Hero section */
@@ -119,17 +146,25 @@ header {
         no-repeat
         fixed;
   height: 100vh;
+  position: relative;
 }
 
 .container-fluid {
   padding: 0;
 }
 
-.hero-text {
-  margin: 4vh 5vw;
-  border: 5px solid #4b3a15ce;
+.wrapper{
+  position: absolute;
   border-radius: 15px;
   background-color: #dbc597ce;
+  text-align: center;
+}
+
+.hero-text {
+  margin: 4vh 5vw;
+  /* border: 5px solid #4b3a15ce;
+  border-radius: 15px;
+  background-color: #dbc597ce; */
   text-align: center;
 }
 
@@ -296,15 +331,14 @@ header {
   padding-bottom: 5vh;
 }
 
-.testimonials small {
+small {
   font-weight: 600;
 }
-.testimonials abbr {
+.container-fluid abbr {
   font-weight: 900;
   text-decoration: none;
   border: none;
 }
-
 
 /*------------------------------------------ Footer & Social Links section*/
 footer {
@@ -328,29 +362,40 @@ footer {
 
 /*------------------------------------------ Media Queries */
 
+@media (min-width: 350px) {
+  .title-size {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 576px) {
-  /* Typography */
+  .title-size {
+    font-size: 2.5rem;
+  }
+  .nav-quote {
+    padding-left: 110px;
+  }
+/****************/
+
   h3 {
     font-size: 3rem;
   }
-  .navbar-brand {
-    font-size: 2.5rem;
-  }
-  .navbar-quote {
-    padding-left: 110px;
-  }
+
+
   .hero-image {
     height: 82vh;
   }
 }
 
 @media (min-width: 768px) {
-  .navbar-brand {
+  .title-size {
     font-size: 3rem;
   }
-  .navbar-quote {
+  .nav-quote {
     padding-left: 150px;
   }
+  /***************/
+
   .hero-text > a {
     margin-top: 0;
   }
@@ -371,10 +416,11 @@ footer {
   .navbar-nav {
     margin-right: 5px;
   }
-  .navbar-quote {
+  .nav-quote {
     padding-top: 2px;
     padding-left: 175px;
   }
+  /***********************/
   .hero-image{
     padding-top: 76px;
   }
@@ -388,18 +434,20 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  .navbar-brand {
+  .title-size {
     font-size: 4rem;
   }
+  /* box model */
   .navbar-nav {
     margin-right: 25px;
   }
   .nav-item {
     margin-left: 20px;
   }
-  .navbar-quote {
+  .nav-quote {
     padding-left: 330px;
   }
+  /******************/
   .hero-image{
     padding-top: 85px;
   }
