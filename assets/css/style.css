@@ -11,7 +11,7 @@ body {
 }
 
 /*------------------------------------------- Typography */
-body, .font-text {
+body {
   font-family: 'Lato', sans-serif;
 }
 
@@ -40,6 +40,7 @@ body, .font-text {
 header {
   background-color: #dbc697;
 }
+/*------------------------------------------ Box model */
 
 /*------------------------------------------- Header & Navbar section */
 .navbar {
@@ -108,10 +109,11 @@ header {
 }
 
 .hero-text {
-  margin: 75px; /*sm 75, ss25*/
+  margin: 4vh 5vw;
+  border: 5px solid #4b3a15ce;
+  border-radius: 15px;
   background-color: #dbc597ce;
   text-align: center;
-  border-radius: 5%;
 }
 
 .hero-text > .icon-helmet {
@@ -125,45 +127,130 @@ header {
 }
 
 .hero-text > a {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  border: 2px solid #4b3a15ce;
+  border-radius: 5px;
   font-size: 1.5rem;
   text-transform: lowercase;
 }
 
 .hero-quote {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-weight: 300;
+  margin-left: 5vw;
+  margin-right: 5vw;
   font-size: 1.1rem;
-  font-style: italic;
+  font-weight: 300;
   line-height: 1.2em;
+  font-style: italic;
   text-align: justify;
 }
 
 .hero-quote > p:first-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .hero-quote > p:last-child {
-  margin-left: 50px;
-  padding-bottom: 20px;
+  margin-left: 10vw;
+  padding-bottom: 1vh;
 }
 
-/*.hero-text > p {
+.call-to-action {
+  margin-top: 2vh;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-transform: capitalize;
-}*/
-
-
-
+}
 
 /*------------------------------------------ Temporary */
 img {
   max-height: 300px;
   max-width: 300px;
 }
+
+/*------------------------------------------ Media Queries */
+
+@media (min-width: 576px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+  .navbar-quote {
+    padding-left: 110px;
+  }
+  .hero-image {
+    height: 82vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  .navbar-quote {
+    padding-left: 150px;
+  }
+  .hero-text > a {
+    margin-top: 0;
+  }
+  .hero-quote {
+    margin-left: 10vw;
+    margin-right: 30vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 16px;
+  }
+  .navbar-nav {
+    margin-right: 5px;
+  }
+  .navbar-quote {
+    padding-top: 2px;
+    padding-left: 175px;
+  }
+  .hero-image{
+    padding-top: 76px;
+  }
+  .hero-text {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .hero-quote {
+    margin-right: 25vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 4rem;
+  }
+  .navbar-nav {
+    margin-right: 25px;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
+  .navbar-quote {
+    padding-left: 330px;
+  }
+  .hero-image{
+    padding-top: 85px;
+  }
+  .hero-text {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 8vh;
+  }
+  .hero-text > h1 {
+    font-size: 3rem;
+  }
+  .hero-text > a {
+    font-size: 2rem;
+  }
+}
+
+
 /*------------------------------------------ Carousel */
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-right.active,
@@ -207,60 +294,3 @@ i{
   color:black;
   font-size:1.5rem; 
 }
-/*------------------------------------------ Media Queries */
-
-@media (min-width: 576px) {
-  .navbar-brand {
-    font-size: 2.5rem;
-  }
-  .navbar-quote {
-    padding-left: 110px;
-  }
-  .hero-image {
-    height: 82vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-brand {
-    font-size: 3rem;
-  }
-  .navbar-quote {
-    padding-left: 150px;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    padding-top: 16px;
-  }
-  .navbar-nav {
-    margin-right: 5px;
-  }
-  .navbar-quote {
-    padding-top: 2px;
-    padding-left: 175px;
-  }
-  .hero-image{
-    padding-top: 76px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar-brand {
-    font-size: 4rem;
-  }
-  .navbar-nav {
-    margin-right: 25px;
-  }
-  .nav-item {
-    margin-left: 20px;
-  }
-  .navbar-quote {
-    padding-left: 330px;
-  }
-  .hero-image{
-    padding-top: 85px;
-  }
-}
-
