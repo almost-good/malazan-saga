@@ -15,12 +15,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.font-special {
+.font-special, h3{
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
 h3 {
-  padding-bottom: 1rem;
+  padding-bottom: 10vh;
   font-size: 2.25rem;
   text-transform: capitalize;
   text-align: center;
@@ -180,12 +180,8 @@ header {
 
 /*------------------------------------------ Authors section */
 .authors {
-  padding: 5vh 5vw;
+  padding: 7vh 5vw 10vh 5vw;
   text-align: center;
-}
-
-.authors-container {
-  padding-top: 4vh;
 }
 
 .author-img {
@@ -197,7 +193,7 @@ header {
 }
 
 .authors h4 {
-  padding-top: 3vh;
+  margin-top: 5vh;
 }
 
 .authors p {
@@ -217,7 +213,7 @@ header {
 }
 
 .author-helmet-icon {
-  margin-top: 3vh;
+  margin-top: -10vh;
   align-items: center;
   justify-content: center;
 }
@@ -230,15 +226,44 @@ header {
 }
 
 .top {
-  bottom: 70%;
+  bottom: 65%;
 }
 
 .bot {
   top: 70%;
 }
 
-/*------------------------------------------ Temporary */
-img {
+/*------------------------------------------ Collections section */
+.fa-chevron-left {
+  margin-left: 3vh;
+}
+
+.fa-chevron-right {
+  margin-right: 3vh;
+}
+
+.collections p {
+  font-size: 1.25rem;
+}
+
+i {
+  color:black;
+  font-size: 1.5rem; 
+  background-color: white;
+  padding: 8px;
+  border: 3px solid #755a3c;
+  border-radius: 15px;
+}
+
+.collections img {
+  height: 300px;
+  width: 200px;
+}
+
+/*------------------------------------------ Testimonials */
+
+
+.testimonials img {
   max-height: 300px;
   max-width: 300px;
 }
@@ -246,6 +271,10 @@ img {
 /*------------------------------------------ Media Queries */
 
 @media (min-width: 576px) {
+  /* Typography */
+  h3 {
+    font-size: 3rem;
+  }
   .navbar-brand {
     font-size: 2.5rem;
   }
@@ -326,7 +355,24 @@ img {
     width: 230px;
   }
 }
-/*------------------------------------------ Carousel */
+/*------------------------------------------ Carousel Media Queries*/
+/*Credits: Code snippet has been adapted from, note that is has been adjusted by me to suid my needs: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html*/
+@media (min-width: 576px) {
+  .fa-chevron-left {
+    margin-left: 5vh;
+  }
+  .fa-chevron-right {
+    margin-right: 5vh;
+  }
+  .collections p {
+    font-size: 1.5rem;
+  }
+  .collections img {
+    height: 400px;
+    width: 260px;
+  }
+}
+
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-right.active,
   .carousel-inner .carousel-item-next {
@@ -336,8 +382,16 @@ img {
   .carousel-inner .carousel-item-prev {
       transform: translateX(-50%);
   }
+  .fa-chevron-left {
+    margin-left: 0vh;
+    margin-bottom: 5vh;
+  }
+  .fa-chevron-right {
+    margin-right: 0vh;
+    margin-bottom: 5vh;
+  }
 }
-/* large - display 3 */
+
 @media (min-width: 992px) {
   .carousel-inner .carousel-item-right.active,
   .carousel-inner .carousel-item-next {
@@ -347,8 +401,15 @@ img {
   .carousel-inner .carousel-item-prev {
       transform: translateX(-33%);
   }
+  /*.fa-chevron-left {
+    margin-left: -1vh;
+  }
+  .fa-chevron-right {
+    margin-right: -1vh;
+  }*/
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .carousel-inner .carousel-item>div {
       display: none;
   }
@@ -356,6 +417,7 @@ img {
       display: block;
   }
 }
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
@@ -365,7 +427,4 @@ img {
 .carousel-inner .carousel-item-left {
   transform: translateX(0);
 }
-i{
-  color:black;
-  font-size:1.5rem; 
-}
+
