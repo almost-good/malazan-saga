@@ -26,7 +26,8 @@ h3,
 /* size */
 
 .nav-item, 
-.nav-btn {
+.nav-btn,
+.authors p {
   font-size: 1rem;
 }
 
@@ -35,6 +36,10 @@ h3,
 .cto,
 .subscribe-btn {
   font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
 }
 
 h1 {
@@ -47,6 +52,13 @@ h1 {
 .cto,
 .hero-quote {
   font-weight: 300;
+}
+
+/* font style */
+
+strong,
+.hero-quote {
+  font-style: italic;
 }
 
 /* letter spacing*/
@@ -63,20 +75,25 @@ h1 {
   line-height: 1.75rem;
 }
 
-/**** to do ****/
-h3 {
-  padding-bottom: 10vh;
-  font-size: 2.25rem;
-  text-transform: capitalize;
+/* align */
+
+h3,
+.hero-text,
+.authors {
   text-align: center;
 }
 
-.lowercase {
-  text-transform: lowercase;
+/*text transform*/
+
+h3,
+.cto {
+  text-transform: capitalize;
 }
 
-
-
+.lowercase,
+.subscribe-btn {
+  text-transform: lowercase;
+}
 
 /*------------------------------------------ Colors */
 
@@ -88,7 +105,7 @@ header {
   background-color: #dbc597ce;
 }
 
-/*------------------------------------------ Box model */
+/*------------------------------------------ Box model - resets */
 .container-fluid {
   padding: 0;
 }
@@ -96,14 +113,21 @@ header {
 .navbar {
   padding-top: 0;
 }
+
 .navbar, .navbar-brand {
   padding-bottom: 0;
 }
-.nav-quote {
+
+.nav-quote,
+.hero-quote > p:first-child {
   margin-bottom: 0;
 }
 
-/*------------------------------------------ Icons and Buttons */
+h3 {
+  padding-bottom: 5vh;
+}
+
+/*------------------------------------------ Icons and Buttons, Border */
 /* icons */
 
 .icon-helmet {
@@ -118,21 +142,33 @@ header {
   width: 0.5em;
 }
 
-/*
 .icon-helmet-md {
   height: 2.5em;
   width: 2.5em;
 }
-*/
+
 .icon-helmet-lg {
   height: 5em;
   width: 5em;
 }
 
-/* buttons */
+/* buttons & border */
+
+.hero-text,
+.author-img {
+  border: 5px solid #4b3a15ce;
+}
+
+.hero-text {
+  border-radius: 15px;
+}
+
+.author-img {
+  border-radius: 50%;
+}
 
 .btn {
-  border: 3px solid #4b3a15ce;
+  border: 3px solid #4b3a15ce; 
   border-radius: 5px;
 }
 
@@ -144,7 +180,6 @@ header {
 .subscribe-btn {
   margin-top: 1vh;
   margin-bottom: 5vh;
-  text-transform: lowercase; /*text-transform-lowercase*/
 }
 
 /*------------------------------------------- Header & Navbar section */
@@ -155,14 +190,14 @@ header {
 }
 
 .navbar-brand {
-  line-height: 1rem; /*line-height-1*/
-  letter-spacing: -0.3vw; /*letter-spacing*/
-  text-transform: uppercase; /*text-transform-upper*/
+  line-height: 1rem; /********/
+  letter-spacing: -0.3vw;
+  text-transform: uppercase; /********/
 }
 
 .navbar-nav {
   margin-right: 25px;
-  text-align: right; /*text-align-right*/
+  text-align: right; /********/
 }
 
 .nav-item {
@@ -199,9 +234,6 @@ header {
 .hero-text {
   margin: 5vh 5vw 10vh 5vw;
   padding-bottom: 2vh;
-  border: 5px solid #4b3a15ce; /*border-5ox-brown*/
-  border-radius: 15px; /*border-radius*/
-  text-align: center; /*text-align-center*/
 }
 
 .hero-text > .icon-helmet {
@@ -213,20 +245,11 @@ header {
   margin-top: 3vh;
 }
 
-.cto {
-  text-transform: capitalize; /*text-transform-capitalise*/
-}
-
 .hero-quote {
   margin-left: 5vw;
   margin-right: 5vw;
-  font-size: 1.25rem; /*font-size*/
-  font-style: italic;  /*font-style-italic*/
-  text-align: justify; /*text-align-justify*/
-}
-
-.hero-quote > p:first-child {
-  margin-bottom: 0;
+  font-size: 1.25rem; /********/
+  text-align: justify; /********/
 }
 
 .hero-quote > p:last-child {
@@ -236,61 +259,72 @@ header {
 
 /*------------------------------------------ Authors section */
 .authors {
-  margin-top: auto;
-  padding: 7vh 5vw 10vh 5vw;
-  text-align: center;
+  padding: 5vh 5vw;
 }
 
 .author-img {
   height: 200px;
   width: 180px;
-  border: 5px solid #4b3a15ce;
   padding: 5px;
-  border-radius: 50%;
 }
 
-.authors h4 {
-  margin-top: 5vh;
+.author-link:hover {
+  text-decoration: none;
+}
+
+.author-name {
+  margin-top: 3vh;
 }
 
 .authors p {
-  text-align: justify;
-  line-height: 1.2rem;
-  padding-top: 1vh;
+  padding-top: 0.5vh;
+  padding-bottom: 2vh;
+  text-align: justify; /********/
+  line-height: 1.2rem; /*line-height*/
 }
 
-.authors strong {
-  font-style: italic;
-}
-
+/*********************************************************************/
 .authors abbr {
-  font-weight: 900;
-  text-decoration: none;
-  border: none;
+  font-weight: 900; /*font-weight*/
+  text-decoration: none; /*text-decoration*/
+  border: none; /*border*/
 }
+/*********************************************************************/
 
 .author-helmet-icon {
   margin-top: -10vh;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /********/
+  justify-content: center; /********/
 }
 
-.vertical-line {
-  border-left: 2px solid black; 
-  height: 30%; 
-  position:absolute; 
+.line {
+  position:absolute;
   left: 50%;
+  border-left: 3px solid #755a3c; /********/
 }
 
-.top {
+.line-top {
+  height: 30%; 
   bottom: 65%;
 }
 
-.bot {
-  top: 70%;
+.line-bot {
+  height: 40%; 
+  top: 65%;
 }
 
 /*------------------------------------------ Collections section */
+.collections {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.collections-border {
+  padding-top: 5vh;
+  border: 5px solid #755a3c;
+  border-radius: 15px;
+}
+
 .fa-chevron-left {
   margin-left: 3vh;
 }
@@ -393,33 +427,29 @@ footer {
   .title-size {
     font-size: 2.5rem;
   }
-  /* box model */
+  h3 {
+    font-size: 3rem;
+  }
   .nav-quote {
     padding-left: 110px;
   }
+  /* hero */
   .hero-img {
     min-height: 82vh;
   }
   .hero-quote > p:last-child {
     margin-left: 10vw;
   }
-/****************/
-  h3 {
-    font-size: 3rem;
-  }
-
-
-
 }
 
 @media (min-width: 768px) {
   .title-size {
     font-size: 3rem;
   }
-  /* box model */
   .nav-quote {
     padding-left: 150px;
   }
+  /* hero */
   .hero-quote {
     margin-left: 10vw;
     margin-right: 30vw;
@@ -427,10 +457,15 @@ footer {
   .hero-text {
     margin-bottom: 5vh;
   }
+  /* author */
+  .authors {
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+  }
+  h3 {
+    padding-bottom: 10vh;
+  }
   /***************/
-
-
-
   /* Testimonials */
   .testimonials blockquote > p:last-child {
     margin-left: 10vw;
@@ -449,7 +484,6 @@ footer {
     padding-top: 2px;
     padding-left: 175px;
   }
-
   /* hero */
   .hero-img {
     padding-top: 89px;
@@ -491,18 +525,17 @@ footer {
   .hero-quote {
     margin-right: 34vw;
   }
-  /******************/
-
-  /*
-
- 
+  /* author */
+  .authors {
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
-
   .author-img {
     height: 250px;
     width: 230px;
-  }*/
+  }
 }
+
 /*------------------------------------------ Carousel Media Queries*/
 /*Credits: Code snippet has been adapted from, note that is has been adjusted by me to suid my needs: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html*/
 @media (min-width: 576px) {
