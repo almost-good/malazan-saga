@@ -32,7 +32,8 @@ h3,
 .nav-item, 
 .nav-btn,
 .authors p,
-.collections p {
+.collections p,
+.social {
   font-size: 1rem;
 }
 
@@ -86,7 +87,9 @@ strong,
 h3,
 .hero-text,
 .authors,
-.testimonials {
+.testimonials,
+.social,
+.social-helmet {
   text-align: center;
 }
 
@@ -209,7 +212,9 @@ header, footer {
 }
 
 .nav-quote,
-.hero-quote > p:first-child {
+.hero-quote > p:first-child,
+.user-quote,
+.social p {
   margin-bottom: 0;
 }
 
@@ -366,7 +371,6 @@ h3 {
 
 .user-quote {
   padding-top: 5vh;
-  margin-bottom: 0;
 }
 
 .testimonials blockquote > p:last-child {
@@ -375,22 +379,12 @@ h3 {
   margin-top: 0;
 }
 /*------------------------------------------- Footer & Social Links section*/
-.social {
-  text-align: center; /*text-align*/
-  font-size: 1rem; /*font-size*/
-}
-
-.social p {
-  margin-bottom: 0; /*margin-reset*/
-}
-
 .social-links {
-  letter-spacing: 2px; /*letter-spacing*/
+  letter-spacing: 2px; /*letter-spacing*//*only one*/
 }
 
 .social-helmet {
-  text-align: center; /*text-align*/
-  font-size: 0.5rem; /*font-size*/
+  font-size: 0.5rem; /*font-size*//*only-one*/
 }
 .social-helmet > .icon-helmet {
   margin-top: 35%;
@@ -642,4 +636,7 @@ h3 {
 .carousel-inner .carousel-item-left {
   transform: translateX(0);
 }
-
+/************************************AUTHOR****************************/
+footer {
+  width: 100vw;
+}
