@@ -31,12 +31,12 @@ h3,
 /* size */
 .nav-item, 
 .nav-btn,
-.authors p {
+.authors p,
+.collections p {
   font-size: 1rem;
 }
 
-.hero-quote,
-.collections p {
+.hero-quote {
   font-size: 1.25rem;
 }
 
