@@ -12,7 +12,7 @@ body {
 }
 
 .container-fluid {
-  padding: 0;
+  /*padding: 0;*/
   overflow: hidden;
 }
 
@@ -192,7 +192,7 @@ small {
   border-radius: 5px;
 }
 /*------------------------------------------- Colors */
-header {
+header, footer {
   background-color: #dbc697;
 }
 
@@ -375,25 +375,26 @@ h3 {
   margin-top: 0;
 }
 /*------------------------------------------- Footer & Social Links section*/
-footer {
-  display: flex;
- /* position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;*/
-  background-color: #dbc697;
+.social {
+  text-align: center; /*text-align*/
+  font-size: 1rem; /*font-size*/
 }
 
-/*.social-links {
-  background-color: #dbc697;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; 
-  margin-top: 50px;
-}*/
+.social p {
+  margin-bottom: 0; /*margin-reset*/
+}
 
+.social-links {
+  letter-spacing: 2px; /*letter-spacing*/
+}
 
+.social-helmet {
+  text-align: center; /*text-align*/
+  font-size: 0.5rem; /*font-size*/
+}
+.social-helmet > .icon-helmet {
+  margin-top: 35%;
+}
 /*------------------------------------------ Media Queries */
   /*------------- xs devices */
 @media (min-width: 350px) {
@@ -426,6 +427,31 @@ footer {
   }
   .user-quote {
     padding-top: 3vh;
+  }
+  /*footer*/
+  .social-helmet {
+    margin-top: 0.5vh;
+  }
+  .social-helmet > .icon-helmet {
+    margin-top: 0;
+  }
+  .author-left,
+  .author-right {
+    margin-top: 0.5vh;
+  }
+  .author-left,
+  .rtl {
+    text-align: end;
+  }
+  .author-right {
+    text-align: start;
+  }
+  .rtl {
+    direction: rtl;
+  }
+  .social-links {
+    padding: 0;
+    margin: 0;
   }
 }
 
