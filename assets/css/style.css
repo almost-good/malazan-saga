@@ -18,7 +18,7 @@ body {
 
 /*------------------------------------------- Typography */
 
-/* family */
+  /* family */
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -28,7 +28,7 @@ h3,
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
-/* size */
+  /* size */
 .nav-item, 
 .nav-btn,
 .authors p,
@@ -57,43 +57,46 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* font weight */
+  /* font weight */
 .cto,
 .hero-quote {
   font-weight: 300;
 }
 
-/* font style */
+  /* font style */
 strong,
-.hero-quote {
+.hero-quote,
+.testimonials blockquote {
   font-style: italic;
 }
 
-/* letter spacing*/
+  /* letter spacing*/
 .nav-item, 
 .cto {
   letter-spacing: 1px;
 }
 
-/* line height */
+  /* line height */
 .nav-link,
 .hero-quote {
   line-height: 1.75rem;
 }
 
-/* align */
+  /* align */
 h3,
 .hero-text,
-.authors {
+.authors,
+.testimonials {
   text-align: center;
 }
 
 .hero-quote,
-.authors p {
+.authors p,
+.testimonials p {
   text-align: justify;
 }
 
-/*text transform*/
+  /*text transform*/
 h3,
 .cto {
   text-transform: capitalize;
@@ -103,9 +106,19 @@ h3,
 .subscribe-btn {
   text-transform: lowercase;
 }
+
+  /* special elements */
+abbr {
+  font-weight: 900;
+  text-decoration: none !important;
+}
+
+small {
+  font-weight: 600;
+}
 /*------------------------------------------- Icons and Buttons, Border */
 
-/* icons */
+  /* icons */
 .icon-helmet {
   background-image: url('../icon/helmet.svg');
   background-repeat: no-repeat;
@@ -136,7 +149,7 @@ h3,
   background-color: white; /*background-color*/
 }
 
-/* buttons */
+  /* buttons */
 .nav-btn {
   margin-top: 15px;
   padding: 4px 6px;
@@ -147,7 +160,7 @@ h3,
   margin-bottom: 5vh;
 }
 
-/* border */
+  /* border */
 .line {
   border: 1px solid #4b3a15ce; 
 }
@@ -159,12 +172,14 @@ h3,
 
 .hero-text,
 .author-img,
-.collections-border {
+.collections-border,
+.testimonials img {
   border: 5px solid #4b3a15ce;
 }
 
 .author-img,
-.carousel-icon {
+.carousel-icon,
+.testimonials img {
   border-radius: 50%;
 }
 
@@ -292,16 +307,8 @@ h3 {
 .authors p {
   padding-top: 0.5vh;
   padding-bottom: 2vh;
-  line-height: 1.2rem; /*line-height*/
+  line-height: 1.2rem; /*line-height*//*onlyone*/
 }
-
-/*********************************************************************/
-.authors abbr {
-  font-weight: 900; /*font-weight*/
-  text-decoration: none; /*text-decoration*/
-  border: none; /*border*/
-}
-/*********************************************************************/
 
 .author-helmet-icon {
   margin-top: -10vh;
@@ -343,43 +350,30 @@ h3 {
 }
 /*------------------------------------------- Testimonials */
 .testimonials {
-  padding: 2vh 5vw 7vh 5vw;
-  text-align: center;
+  padding: 2vh 10vw 5vh 10vw;
 }
 
 .testimonials img {
   height: 200px;
   width: 180px;
-  border: 5px solid #4b3a15ce;
   padding: 5px;
-  border-radius: 50%;
 }
 
 .testimonials p {
-  line-height: 1.2rem;
-  padding-top: 5vh;
+  font-size: 1.15rem; /*font-size*//*only one*/
+  line-height: 1.3rem; /*line-height*//*only one*/
 }
 
-.testimonials blockquote > p:first-child {
-  font-style: italic;
+.user-quote {
+  padding-top: 5vh;
   margin-bottom: 0;
 }
+
 .testimonials blockquote > p:last-child {
   margin-left: 20vw;
   padding-top: 0;
   margin-top: 0;
-  padding-bottom: 5vh;
 }
-
-small {
-  font-weight: 600;
-}
-.container-fluid abbr {
-  font-weight: 900;
-  text-decoration: none;
-  border: none;
-}
-
 /*------------------------------------------- Footer & Social Links section*/
 footer {
   display: flex;
@@ -401,13 +395,14 @@ footer {
 
 
 /*------------------------------------------ Media Queries */
-
+  /*------------- xs devices */
 @media (min-width: 350px) {
   .title-size {
     font-size: 2rem;
   }
 }
 
+  /*------------- sm devices */
 @media (min-width: 576px) {
   .title-size {
     font-size: 2.5rem;
@@ -425,8 +420,16 @@ footer {
   .hero-quote > p:last-child {
     margin-left: 10vw;
   }
+  /* testimonials*/
+  .testimonials p {
+    text-align: center;
+  }
+  .user-quote {
+    padding-top: 3vh;
+  }
 }
 
+  /*------------- md devices */
 @media (min-width: 768px) {
   .title-size {
     font-size: 3rem;
@@ -450,13 +453,18 @@ footer {
   h3 {
     padding-bottom: 10vh;
   }
-  /***************/
-  /* Testimonials */
+  /* testimonials */
+  .testimonials {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+  }
   .testimonials blockquote > p:last-child {
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
 }
 
+  /*------------- lg devices */
 @media (min-width: 992px) {
   /* nav */
   .navbar {
@@ -480,8 +488,14 @@ footer {
   .hero-quote {
     margin-right: 20vw;
   }
+  /* testimonials */
+  .testimonials {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
+  /*------------- xl devices */
 @media (min-width: 1200px) {
   h1 {
     font-size: 3rem;
@@ -519,8 +533,20 @@ footer {
     height: 250px;
     width: 230px;
   }
+  /* testimonials */
+  .testimonials {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vh;
+  }
+  .testimonials img {
+    height: 250px;
+    width: 220px;
+  }
+  .user-quote {
+    padding-top: 5vh;
+  }
 }
-
 /*------------------------------------------ Carousel Media Queries*/
 /*Credits: Code snippet has been adapted from, note that is has been adjusted by me to suid my needs: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html*/
 
