@@ -11,9 +11,14 @@ body {
   margin-bottom: 100px;
 }
 
-/*------------------------------------------- Typography */
-/* family */
+.container-fluid {
+  padding: 0;
+  overflow: hidden;
+}
 
+/*------------------------------------------- Typography */
+
+/* family */
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -24,17 +29,22 @@ h3,
 }
 
 /* size */
-
 .nav-item, 
 .nav-btn,
 .authors p {
   font-size: 1rem;
 }
 
+.hero-quote,
+.collections p {
+  font-size: 1.25rem;
+}
+
 .title-size, 
 .nav-subscribe, 
 .cto,
-.subscribe-btn {
+.subscribe-btn,
+.carousel-icon {
   font-size: 1.5rem;
 }
 
@@ -48,43 +58,42 @@ h1 {
 }
 
 /* font weight */
-
 .cto,
 .hero-quote {
   font-weight: 300;
 }
 
 /* font style */
-
 strong,
 .hero-quote {
   font-style: italic;
 }
 
 /* letter spacing*/
-
 .nav-item, 
 .cto {
   letter-spacing: 1px;
 }
 
 /* line height */
-
 .nav-link,
 .hero-quote {
   line-height: 1.75rem;
 }
 
 /* align */
-
 h3,
 .hero-text,
 .authors {
   text-align: center;
 }
 
-/*text transform*/
+.hero-quote,
+.authors p {
+  text-align: justify;
+}
 
+/*text transform*/
 h3,
 .cto {
   text-transform: capitalize;
@@ -94,42 +103,9 @@ h3,
 .subscribe-btn {
   text-transform: lowercase;
 }
+/*------------------------------------------- Icons and Buttons, Border */
 
-/*------------------------------------------ Colors */
-
-header {
-  background-color: #dbc697;
-}
-
-.hero-text {
-  background-color: #dbc597ce;
-}
-
-/*------------------------------------------ Box model - resets */
-.container-fluid {
-  padding: 0;
-}
-
-.navbar {
-  padding-top: 0;
-}
-
-.navbar, .navbar-brand {
-  padding-bottom: 0;
-}
-
-.nav-quote,
-.hero-quote > p:first-child {
-  margin-bottom: 0;
-}
-
-h3 {
-  padding-bottom: 5vh;
-}
-
-/*------------------------------------------ Icons and Buttons, Border */
 /* icons */
-
 .icon-helmet {
   background-image: url('../icon/helmet.svg');
   background-repeat: no-repeat;
@@ -152,26 +128,15 @@ h3 {
   width: 5em;
 }
 
-/* buttons & border */
-
-.hero-text,
-.author-img {
-  border: 5px solid #4b3a15ce;
+.carousel-icon {
+  height: 50px;
+  width: 50px;
+  padding: 8px;
+  color:black;
+  background-color: white; /*background-color*/
 }
 
-.hero-text {
-  border-radius: 15px;
-}
-
-.author-img {
-  border-radius: 50%;
-}
-
-.btn {
-  border: 3px solid #4b3a15ce; 
-  border-radius: 5px;
-}
-
+/* buttons */
 .nav-btn {
   margin-top: 15px;
   padding: 4px 6px;
@@ -182,22 +147,75 @@ h3 {
   margin-bottom: 5vh;
 }
 
-/*------------------------------------------- Header & Navbar section */
+/* border */
+.line {
+  border: 1px solid #4b3a15ce; 
+}
 
+.btn,
+.carousel-icon {
+  border: 3px solid #4b3a15ce; 
+}
+
+.hero-text,
+.author-img,
+.collections-border {
+  border: 5px solid #4b3a15ce;
+}
+
+.author-img,
+.carousel-icon {
+  border-radius: 50%;
+}
+
+.hero-text,
+.collections-border {
+  border-radius: 15px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+/*------------------------------------------- Colors */
+header {
+  background-color: #dbc697;
+}
+
+.hero-text {
+  background-color: #dbc597ce;
+}
+/*------------------------------------------- Box model - resets */
+.navbar {
+  padding-top: 0;
+}
+
+.navbar, .navbar-brand {
+  padding-bottom: 0;
+}
+
+.nav-quote,
+.hero-quote > p:first-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  padding-bottom: 5vh;
+}
+/*------------------------------------------- Header & Navbar section */
 .navbar {
   padding-left: 16px;
   padding-right: 16px;
 }
 
 .navbar-brand {
-  line-height: 1rem; /********/
+  line-height: 1rem; /*line-height*//*only-one*/
   letter-spacing: -0.3vw;
-  text-transform: uppercase; /********/
+  text-transform: uppercase; /*text-transform*//*only-one*/
 }
 
 .navbar-nav {
   margin-right: 25px;
-  text-align: right; /********/
+  text-align: right; /*text-align*//*only-one*/
 }
 
 .nav-item {
@@ -215,9 +233,7 @@ h3 {
 .nav-quote {
   padding-left: 8vw;
 }
-
-/*------------------------------------------ Hero section */
-
+/*------------------------------------------- Hero section */
 .hero-img {
   /* Credits: Image sourced from Corporal--Nobbs on Devianart https://www.deviantart.com/corporal--nobbs/art/Malazan-World-Map-739391015/ */
   padding-top: 77px;
@@ -248,16 +264,13 @@ h3 {
 .hero-quote {
   margin-left: 5vw;
   margin-right: 5vw;
-  font-size: 1.25rem; /********/
-  text-align: justify; /********/
 }
 
 .hero-quote > p:last-child {
   margin-left: 5vw;
   padding-bottom: 1vh;
 }
-
-/*------------------------------------------ Authors section */
+/*------------------------------------------- Authors section */
 .authors {
   padding: 5vh 5vw;
 }
@@ -279,7 +292,6 @@ h3 {
 .authors p {
   padding-top: 0.5vh;
   padding-bottom: 2vh;
-  text-align: justify; /********/
   line-height: 1.2rem; /*line-height*/
 }
 
@@ -293,14 +305,13 @@ h3 {
 
 .author-helmet-icon {
   margin-top: -10vh;
-  align-items: center; /********/
-  justify-content: center; /********/
+  align-items: center; /*align-items*//*only one*/
+  justify-content: center; /*justify-content*//*only one*/
 }
 
 .line {
   position:absolute;
   left: 50%;
-  border-left: 3px solid #755a3c; /********/
 }
 
 .line-top {
@@ -312,8 +323,7 @@ h3 {
   height: 40%; 
   top: 65%;
 }
-
-/*------------------------------------------ Collections section */
+/*------------------------------------------- Collections section */
 .collections {
   padding-left: 1vw;
   padding-right: 1vw;
@@ -321,42 +331,17 @@ h3 {
 
 .collections-border {
   padding-top: 5vh;
-  border: 5px solid #755a3c;
-  border-radius: 15px;
-}
-
-.fa-chevron-left {
-  margin-left: 3vh;
-}
-
-.fa-chevron-right {
-  margin-right: 3vh;
 }
 
 .collections p {
-  font-size: 1.25rem;
-}
-
-.collections i {
-  color:black;
-  font-size: 1.5rem; 
-  background-color: white;
-  padding: 8px;
-  border: 3px solid #755a3c;
-  border-radius: 15px;
+  padding-top: 2vh;
 }
 
 .collections img {
   height: 300px;
   width: 200px;
 }
-
-.collections blockquote {
-  margin-bottom: 0;
-}
-
-
-/*------------------------------------------ Testimonials */
+/*------------------------------------------- Testimonials */
 .testimonials {
   padding: 2vh 5vw 7vh 5vw;
   text-align: center;
@@ -395,7 +380,7 @@ small {
   border: none;
 }
 
-/*------------------------------------------ Footer & Social Links section*/
+/*------------------------------------------- Footer & Social Links section*/
 footer {
   display: flex;
  /* position: fixed;
@@ -538,12 +523,14 @@ footer {
 
 /*------------------------------------------ Carousel Media Queries*/
 /*Credits: Code snippet has been adapted from, note that is has been adjusted by me to suid my needs: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html*/
+
 @media (min-width: 576px) {
+  /* icon */
   .fa-chevron-left {
-    margin-left: 5vh;
+    margin-left: 7vw;
   }
   .fa-chevron-right {
-    margin-right: 5vh;
+    margin-right: 7vw;
   }
   .collections p {
     font-size: 1.5rem;
@@ -563,12 +550,13 @@ footer {
   .carousel-inner .carousel-item-prev {
       transform: translateX(-50%);
   }
+  /*icon*/
   .fa-chevron-left {
-    margin-left: 0vh;
+    margin-left: 0;
     margin-bottom: 5vh;
   }
   .fa-chevron-right {
-    margin-right: 0vh;
+    margin-right: 0;
     margin-bottom: 5vh;
   }
 }
