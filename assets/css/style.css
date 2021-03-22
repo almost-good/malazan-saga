@@ -23,7 +23,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h3,
+h1, h2, h3,
 .font-switch {
   font-family: 'IM Fell DW Pica SC', serif;
 }
@@ -33,7 +33,8 @@ h3,
 .nav-btn,
 .authors p,
 .collections p,
-.social {
+.social,
+.title-text {
   font-size: 1rem;
 }
 
@@ -49,7 +50,7 @@ h3,
   font-size: 1.5rem;
 }
 
-h3 {
+h3, h2 {
   font-size: 2.25rem;
 }
 
@@ -77,34 +78,47 @@ strong,
   letter-spacing: 1px;
 }
 
+.title-content h1 {
+  letter-spacing: 3px;
+}
+
   /* line height */
 .nav-link,
 .hero-quote {
   line-height: 1.75rem;
 }
 
+.title-content {
+  line-height: 1.25rem;
+}
+
   /* align */
-h3,
+h3, h2,
 .hero-text,
 .authors,
 .testimonials,
 .social,
-.social-helmet {
+.social-helmet,
+.title-content,
+.content p {
   text-align: center;
 }
 
 .hero-quote,
 .authors p,
-.testimonials p {
+.testimonials p,
+.title-text {
   text-align: justify;
 }
 
   /*text transform*/
 h3,
-.cto {
+.cto,
+.title-content h1 {
   text-transform: capitalize;
 }
 
+h2,
 .lowercase,
 .subscribe-btn {
   text-transform: lowercase;
@@ -194,6 +208,34 @@ small {
 .btn {
   border-radius: 5px;
 }
+
+  /* line */
+  .line {
+    position: absolute;
+  }
+  
+  .line-top {
+    height: 30%; 
+    bottom: 65%;
+    left: 50%;
+  }
+  
+  .line-bot {
+    height: 40%; 
+    top: 65%;
+    left: 50%;
+  }
+
+  .line-horizontal {
+    width: 70%;
+    left: 15%;
+  }
+
+  .line-vertical {
+    height: 40%;
+    left: 50%;
+    bottom: 30%;
+  }
 /*------------------------------------------- Colors */
 header, footer {
   background-color: #dbc697;
@@ -320,21 +362,6 @@ h3 {
   align-items: center; /*align-items*//*only one*/
   justify-content: center; /*justify-content*//*only one*/
 }
-
-.line {
-  position:absolute;
-  left: 50%;
-}
-
-.line-top {
-  height: 30%; 
-  bottom: 65%;
-}
-
-.line-bot {
-  height: 40%; 
-  top: 65%;
-}
 /*------------------------------------------- Collections section */
 .collections {
   padding-left: 1vw;
@@ -378,7 +405,7 @@ h3 {
   padding-top: 0;
   margin-top: 0;
 }
-/*------------------------------------------- Footer & Social Links section*/
+/*------------------------------------------- Footer & Social Links section */
 .social-links {
   letter-spacing: 2px; /*letter-spacing*//*only one*/
 }
@@ -389,6 +416,38 @@ h3 {
 .social-helmet > .icon-helmet {
   margin-top: 35%;
 }
+/*------------------------------------------------------------------------------------------------------- HTML PAGES */
+/*------------------------------------------- TITLE content */
+.title-content {
+  padding: 100px 3vw 5vh 3vw;
+}
+.title-content h1 {
+  padding-bottom: 2vh;
+}
+/*------------------------------------------- Content */
+.content {
+  padding: 0 3vw 2vh 3vw;
+}
+
+.content p {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+ol {
+  list-style-position: inside;
+  list-style-type: upper-roman;
+  padding-left: 35%;
+}
+
+ol li:last-child {
+  padding-bottom: 2vh;
+}
+
+.content small {
+  padding-left: 35%;
+}
+
 /*------------------------------------------ Media Queries */
   /*------------- xs devices */
 @media (min-width: 350px) {
@@ -447,6 +506,10 @@ h3 {
     padding: 0;
     margin: 0;
   }
+  /******** aside from index.html */
+  .title-content {
+  padding-top: 125px;
+  }
 }
 
   /*------------- md devices */
@@ -482,6 +545,20 @@ h3 {
   .testimonials blockquote > p:last-child {
     margin-left: 5vw;
   }
+  /******** aside from index.html */
+  /* title */
+  .title-content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .title-content h1 {
+    letter-spacing: 10px;
+  }
+  /* content */
+  .content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
   /*------------- lg devices */
@@ -513,7 +590,21 @@ h3 {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  /******** aside from index.html */
+  /* title */
+  .title-content {
+  padding-bottom: 7vh;
+  }
+  .title-text {
+    text-align: center;
+  }
+  /* content */
+  .content {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
 }
+
 
   /*------------- xl devices */
 @media (min-width: 1200px) {
@@ -565,6 +656,15 @@ h3 {
   }
   .user-quote {
     padding-top: 5vh;
+  }
+  /******** aside from index.html */
+  .title-content {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    }
+  /* content */
+  .content {
+    padding-bottom: 5vh;
   }
 }
 /*------------------------------------------ Carousel Media Queries*/
