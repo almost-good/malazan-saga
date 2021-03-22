@@ -106,7 +106,8 @@ strong,
   line-height: 0;
 }
 .title-content,
-.content-author p {
+.content-author p,
+.book-info {
   line-height: 1.25rem;
 }
 
@@ -534,20 +535,21 @@ iframe {
   padding-bottom: 5vh;
 }
 
-.book-items {
-
-}
-
 .list-group-item {
-  padding-left: 0;
+  padding-left: 2px;
   padding-right: 0;
+}
+.book-items {
+  height: 75vh;
+  overflow-y: scroll;
 }
 
 .spy-container {
-  height: 400px;
+  height: 800px;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-right: 20px;
 }
 .spy-container > p {
   margin-bottom: 0vh;
@@ -568,6 +570,10 @@ iframe {
 
 .book-info {
   padding-bottom: 5vh;
+}
+
+.book {
+  padding-top: 20px;;
 }
 
 /*------------------------------------------ Media Queries */
