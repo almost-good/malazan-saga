@@ -34,20 +34,20 @@ h1, h2, h3, h4, h5,
 .nav-btn,
 .collections p,
 .social,
-.title-text {
+.title-text,
+.book-items,
+.book-content p {
   font-size: 1rem;
 }
 
 .content p,
 .content a,
 .authors p,
-.title-content p,
-.book-content p {
+.title-content p {
   font-size: 1.1rem;
 }
 
-.hero-quote,
-.book-items {
+.hero-quote {
   font-size: 1.25rem;
 }
 
@@ -528,7 +528,8 @@ iframe {
 }
 /*------------------------------------------- Books */
 .book-content {
-  width: 100vw;
+  width: 95vw;
+  padding-bottom: 2vh;
 }
 
 .book-title {
@@ -539,13 +540,17 @@ iframe {
   padding-left: 2px;
   padding-right: 0;
 }
+
+
 .book-items {
-  height: 75vh;
+  height: 60vh;
   overflow-y: scroll;
+  width: min-content;
 }
 
+
 .spy-container {
-  height: 800px;
+  height: 60vh;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -560,8 +565,8 @@ iframe {
   }
 
 .spy-container img {
-  height: 300px;
-  width: 200px;
+  max-height: 250px;
+  max-width: 150px;
 }
 
 .book-cover {
@@ -573,7 +578,8 @@ iframe {
 }
 
 .book {
-  padding-top: 20px;;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*------------------------------------------ Media Queries */
@@ -653,6 +659,16 @@ iframe {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .book-items {
+    font-size: 1.3rem;
+  }
+  .spy-container img {
+    max-height: 350px;
+    max-width: 200px;
+  }
+  .book-content p {
+    font-size: 1.1rem;
+  }
 }
 
   /*------------- md devices */
@@ -716,6 +732,9 @@ iframe {
   iframe {
     width: 350px;
     height: 195px;
+  }
+  .book-items {
+    width: auto;
   }
 }
 
