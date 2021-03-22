@@ -23,7 +23,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3,
+h1, h2, h3, h4, 
 .font-switch {
   font-family: 'IM Fell DW Pica SC', serif;
 }
@@ -87,27 +87,38 @@ strong,
 .hero-quote {
   line-height: 1.75rem;
 }
-
-.title-content {
+.author-center {
+  line-height: 0;
+}
+.title-content,
+.content-author p {
   line-height: 1.25rem;
 }
 
+.drop-book-list-ian,
+.drop-book-list-steven {
+  line-height: 0.75rem;
+}
+
   /* align */
-h3, h2,
+h3, h2, h4,
 .hero-text,
 .authors,
 .testimonials,
 .social,
 .social-helmet,
 .title-content,
-.content p {
+.content-reading-order p,
+.author-center,
+.authors-video {
   text-align: center;
 }
 
 .hero-quote,
 .authors p,
 .testimonials p,
-.title-text {
+.title-text,
+.content-author p {
   text-align: justify;
 }
 
@@ -190,13 +201,15 @@ small {
 .hero-text,
 .author-img,
 .collections-border,
-.testimonials img {
+.testimonials img,
+.content-author-img {
   border: 5px solid #4b3a15ce;
 }
 
 .author-img,
 .carousel-icon,
-.testimonials img {
+.testimonials img,
+.content-author-img {
   border-radius: 50%;
 }
 
@@ -444,10 +457,52 @@ ol li:last-child {
   padding-bottom: 2vh;
 }
 
-.content small {
+.content-reading-order p:last-child {
   padding-left: 35%;
 }
 
+.content-author h2 {
+  padding-top: 2vh;
+}
+
+.author-center {
+  padding-bottom: 2vh;
+  padding-top: 10vh;
+}
+
+.content-author-img {
+  height: 350px;
+  width: 300px;
+  padding: 5px;
+}
+
+.book-list {
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+}
+
+.btn-book-list {
+  width: 100%;
+}
+
+.drop-book-list-steven,
+.drop-book-list-ian {
+  width:100%;
+}
+/*------------------------------------------- Video */
+.authors-video {
+  padding-bottom: 5vh;
+}
+
+.authors-video h4 {
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+iframe {
+  width: 250px;
+  height: 140px;
+}
 /*------------------------------------------ Media Queries */
   /*------------- xs devices */
 @media (min-width: 350px) {
@@ -510,6 +565,17 @@ ol li:last-child {
   .title-content {
   padding-top: 125px;
   }
+  .author-center {
+    padding-top: 2vh;
+  }
+  .content-author-img {
+    height: 400px;
+    width: 350px;
+  }
+  iframe {
+    width: 500px;
+    height: 315px;
+  }
 }
 
   /*------------- md devices */
@@ -559,6 +625,21 @@ ol li:last-child {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  .drop-book-list-steven {
+    width:200%;
+  }
+  .content-author-img {
+    height: 300px;
+    width: 250px;
+  }
+  .author-center {
+    padding-bottom: 7vh;
+    padding-top: 5vh;
+  }
+  iframe {
+    width: 350px;
+    height: 195px;
+  }
 }
 
   /*------------- lg devices */
@@ -599,12 +680,26 @@ ol li:last-child {
     text-align: center;
   }
   /* content */
-  .content {
+  .content-reading-order {
     padding-left: 15vw;
     padding-right: 15vw;
   }
+  .drop-book-list-steven {
+    width:170%;
+  }
+  .author-center {
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+  }
+  .content-author-img {
+    height: 400px;
+    width: 350px;
+  }
+  iframe {
+    width: 450px;
+    height: 250px;
+  }
 }
-
 
   /*------------- xl devices */
 @media (min-width: 1200px) {
@@ -666,7 +761,21 @@ ol li:last-child {
   .content {
     padding-bottom: 5vh;
   }
+  .drop-book-list-steven {
+    width: 150%;
+  }
+  iframe {
+    width: 500px;
+    height: 315px;
+  }
 }
+
+  /*------------- extra xl devices */
+  @media (min-width: 1600px) {
+    .drop-book-list-steven {
+      width: 100%;
+    }
+  }
 /*------------------------------------------ Carousel Media Queries*/
 /*Credits: Code snippet has been adapted from, note that is has been adjusted by me to suid my needs: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html*/
 
