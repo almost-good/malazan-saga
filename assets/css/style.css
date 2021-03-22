@@ -23,25 +23,35 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, 
-.font-switch {
+h1, h2, h3, h4, h5,
+.font-switch,
+.book-items {
   font-family: 'IM Fell DW Pica SC', serif;
 }
 
   /* size */
 .nav-item, 
 .nav-btn,
-.authors p,
 .collections p,
 .social,
 .title-text {
   font-size: 1rem;
 }
 
-.hero-quote {
+.content p,
+.content a,
+.authors p,
+.title-content p,
+.book-content p {
+  font-size: 1.1rem;
+}
+
+.hero-quote,
+.book-items {
   font-size: 1.25rem;
 }
 
+h5,
 .title-size, 
 .nav-subscribe, 
 .cto,
@@ -50,11 +60,16 @@ h1, h2, h3, h4,
   font-size: 1.5rem;
 }
 
+h4 {
+  font-size: 2rem;;
+}
+
 h3, h2 {
   font-size: 2.25rem;
 }
 
-h1 {
+h1,
+.book-content h2 {
   font-size: 2.5rem;
   letter-spacing: 2px;
 }
@@ -101,7 +116,7 @@ strong,
 }
 
   /* align */
-h3, h2, h4,
+h3, h2, h4, h5,
 .hero-text,
 .authors,
 .testimonials,
@@ -110,7 +125,8 @@ h3, h2, h4,
 .title-content,
 .content-reading-order p,
 .author-center,
-.authors-video {
+.authors-video,
+.book-cover {
   text-align: center;
 }
 
@@ -118,7 +134,8 @@ h3, h2, h4,
 .authors p,
 .testimonials p,
 .title-text,
-.content-author p {
+.content-author p,
+.book-info {
   text-align: justify;
 }
 
@@ -189,12 +206,16 @@ small {
 }
 
   /* border */
-.line {
+.line,
+.list-group-item,
+.spy-container hr {
   border: 1px solid #4b3a15ce; 
 }
 
 .btn,
-.carousel-icon {
+.carousel-icon,
+.spy-container img,
+.book-items {
   border: 3px solid #4b3a15ce; 
 }
 
@@ -202,7 +223,8 @@ small {
 .author-img,
 .collections-border,
 .testimonials img,
-.content-author-img {
+.content-author-img,
+.book-title hr {
   border: 5px solid #4b3a15ce;
 }
 
@@ -218,7 +240,7 @@ small {
   border-radius: 15px;
 }
 
-.btn {
+.btn, .spy-container img {
   border-radius: 5px;
 }
 
@@ -503,6 +525,51 @@ iframe {
   width: 250px;
   height: 140px;
 }
+/*------------------------------------------- Books */
+.book-content {
+  width: 100vw;
+}
+
+.book-title {
+  padding-bottom: 5vh;
+}
+
+.book-items {
+
+}
+
+.list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.spy-container {
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.spy-container > p {
+  margin-bottom: 0vh;
+}
+
+.isbn {
+  padding-bottom: 4vh;
+  }
+
+.spy-container img {
+  height: 300px;
+  width: 200px;
+}
+
+.book-cover {
+  padding-bottom: 3vh;
+}
+
+.book-info {
+  padding-bottom: 5vh;
+}
+
 /*------------------------------------------ Media Queries */
   /*------------- xs devices */
 @media (min-width: 350px) {
@@ -575,6 +642,10 @@ iframe {
   iframe {
     width: 500px;
     height: 315px;
+  }
+  .list-group-item {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
