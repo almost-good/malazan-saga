@@ -112,6 +112,11 @@ Manual testing was done using [Chrome Developer Tools](https://developers.google
 
 ## Deployment
 ### GitHub Pages
+* Go to repository
+* Click on "Settings"
+* Scroll until section "GitHub Pages"
+* Select on the "source" dropdown menu the "master branch" option
+* A success message (in green) appears and it shows you the link for your live preview page in Github Pages.
 ### Local
 * Go to repository
 * Click on the button "code"
