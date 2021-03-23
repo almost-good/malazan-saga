@@ -9,7 +9,6 @@ This website will provide it's users with lots of information regarding books fr
     * [User Stories](#user-stories)
     * [Design](#design)
         * [Wireframes](#wireframes)
-        * [Color Scheme](#color-scheme)
         * [Typography](#typography)
 * [Features](#features)
     * [Existing Features](#existing-features)
@@ -20,7 +19,6 @@ This website will provide it's users with lots of information regarding books fr
     * [Manual Testing](#manual-testing)
     * [Bugs](#bugs)
 * [Deployment](#deployment)
-    * [Project Creation](#project-creation)
     * [GitHub Pages](#github-pages)
     * [Local](#local)
 * [Credits](#credits)
@@ -56,7 +54,6 @@ Wireframes are separated by the Web Pages, offering device by device view of eac
 * [Sign Up Page Wireframe](./docs/wireframes/signup-wireframe.pdf)
 
 Note: during the development of the website small changes were implemented so the website may differ from original wireframes.
-#### Color Scheme
 #### Typography
 Font's that were used are Lato and IM Fell DW Pica SC, with Lato used for main content, and IM Fell DW Pica SC for headings and highlighting parts of a text.
 ## Features
@@ -103,16 +100,27 @@ Main thing that I would like to do is optimise CSS code, that will allow me to h
 
 ## Testing
 ### Automated Testing
+* [W3 HTML Validator](https://validator.w3.org/) for HTML validation
+* [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) for CSS validation
+
 ### Manual Testing
+Manual testing was done using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 ### Bugs
 * Hamburger collapse show: Items would not align to the right side of a browser.
     * Tried placing mr-auto, justify-content-end, many kind of item and text alignments to get them to move at least a bit ~ no success 
     * FIX: Added display property to div that consists of nav-items which collapse from hamburger menu. Value was "block" and it has been changed to "flex". After that I added ml-auto class to HTML "ul" tag and it aligned to right side of browser window nicely.
 
 ## Deployment
-### Project Creation
 ### GitHub Pages
 ### Local
+* Go to repository
+* Click on the button "code"
+* Select the "HTTPS" option
+* Copy the URL
+* Open your Terminal
+* Create a directory for storing this repository
+* Type "git clone" and paste the URL in that you previously copied
+* Press enter to create local clone repository
 
 ## Credits
 ### Media
