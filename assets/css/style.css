@@ -214,14 +214,14 @@ small {
 .line,
 .list-group-item,
 .spy-container hr {
-  border: 1px solid #4b3a15ce; 
+  border: 1px solid #6c1f0f; 
 }
 
 .btn,
 .carousel-icon,
 .spy-container img,
 .book-items {
-  border: 3px solid #4b3a15ce; 
+  border: 3px solid #6c1f0f; 
 }
 
 .hero-text,
@@ -230,7 +230,7 @@ small {
 .testimonials img,
 .content-author-img,
 .book-title hr {
-  border: 5px solid #4b3a15ce;
+  border: 5px solid #6c1f0f;
 }
 
 .author-img,
@@ -278,11 +278,34 @@ small {
   }
 /*------------------------------------------- Colors */
 header, footer {
-  background-color: #dbc697;
+  background-color: #dbc597;
 }
-
+header {
+  border-bottom: 3px solid #6c1f0f;
+  color: #6c1f0f;
+}
+footer {
+  border-top: 3px solid #6c1f0f;
+}
 .hero-text {
   background-color: #dbc597ce;
+}
+body {
+  color: #6c1f0f;
+  background-color: #f1e9d6ce;
+}
+a {
+  color: #270c07;
+}
+.collections-border, img {
+  background-color: #dbc597;
+}
+.list-group-item.active {
+  background-color: #6c1f0f;
+  border-color: #dbc597;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:#6c1f0f;
 }
 /*------------------------------------------- Box model - resets */
 .navbar {
@@ -722,7 +745,7 @@ footer {
 .signup-form{  
   width:330px;  
   margin:auto; 
-  border: 5px solid #4b3a15ce; 
+  border: 5px solid #6c1f0f; 
   background-color: #dbc597ce;
   padding:30px; 
 
