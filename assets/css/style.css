@@ -473,7 +473,7 @@ h3 {
 ol {
   list-style-position: inside;
   list-style-type: upper-roman;
-  padding-left: 35%;
+  padding-left: 10%;
 }
 
 ol li:last-child {
