@@ -125,7 +125,9 @@ h3, h2, h4, h5,
 .author-center,
 .authors-video,
 .book-cover,
-.subscriptions {
+.subscriptions,
+.icon-center,
+.book {
   text-align: center;
 }
 
@@ -551,7 +553,7 @@ iframe {
 
 
 .spy-container {
-  height: 60vh;
+  height: 75vh;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -578,10 +580,15 @@ iframe {
 .book-info {
   padding-bottom: 5vh;
 }
-
+.book-spy-container-l {
+  padding-top: 100px;
+}
 .book {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.entire-container {
+  padding-bottom: 5vh;
 }
 
 /*------------------------------------------ Media Queries */
@@ -671,6 +678,9 @@ iframe {
   .book-content p {
     font-size: 1.1rem;
   }
+  .spy-container {
+    height: 70vh;
+  }
 }
 
   /*------------- md devices */
@@ -736,6 +746,7 @@ iframe {
   .book-items {
     width: auto;
   }
+
 }
 
   /*------------- lg devices */
@@ -793,6 +804,11 @@ iframe {
     width: 450px;
     height: 250px;
   }
+  .book-items {
+    height: auto;
+    overflow-y: hidden;
+  }
+
 }
 
   /*------------- xl devices */
@@ -859,6 +875,12 @@ iframe {
   iframe {
     width: 500px;
     height: 315px;
+  }
+  .book-spy-container-l {
+    padding-left: 10vw;
+  }
+  .book-spy-container-r {
+    padding-right: 10vw;
   }
 }
 
