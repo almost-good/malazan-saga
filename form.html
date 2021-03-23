@@ -15,178 +15,133 @@
 </head>
 <body>
     <!-- Header & Navbar -->
-    <header class="fixed-top">
+    <header class="fixed-top" >
         <nav class="navbar navbar-light navbar-expand-lg">
-            <a href="index.html" class="navbar-brand font-switch title-size">Malazan Saga <span
-                    class="icon-helmet icon-helmet-sm"></span></a>
-            <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="index.html" class="navbar-brand font-switch title-size">Malazan Saga <span class="icon-helmet icon-helmet-sm"></span></a>
+            <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbarNavDropdown">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
                     <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
                     <li class="nav-item"><a class="nav-link" href="reading-order.html">Reading Order</a></li>
-                    <li class="active nav-item nav-subscribe"><a class="nav-link font-switch"
-                            href="form.html">Subscribe!</a></li>
+                    <li class="nav-item nav-subscribe"><a class="nav-link font-switch" href="form.html">Subscribe!</a></li>
                 </ul>
             </div>
         </nav>
         <p class="nav-quote"><em>...the harder the world, the fiercer the honour...</em></p>
     </header>
     <!-- /.header & navbar -->
-​
-    <!-- TITLE content -->
-    <section class="title-content">
-        <div class="icon-helmet icon-helmet-lg"></div>
-        <h1>Subscribe!</h1>
-        <div class="title-text">
-            <p>
-                Subscribe for Malazan newsletter and recive fantastic quotes!
-                <br><em>Malazan is the way to go!</em>
-            </p>
-        </div>
-    </section>
-    <!-- /.title content -->
-​
+
     <!-- Signup form -->
     <div class="hero-img hero-img-form">
-        <div class="form-wrapper">
-            <form class="needs-validation signup-form" novalidate>
-                <div class="form-group row">
-                    <label for="name">Name*</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-                    <div class="invalid-feedback">
-                        Name is required.
+        <div class="container-fluid container-padd">
+            <div class="form-wrapper">
+                <form class="needs-validation signup-form">
+                        <div class="signup-title">
+                            <div class="icon-helmet icon-helmet-lg"></div>
+                            <h1>Subscribe!</h1>
+                            <p>
+                                Subscribe for Malazan newsletter and recive fantastic quotes!
+                                <br><em>Malazan is the way to go!</em>
+                            </p>
+                        </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="name">Name*</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                            <div class="invalid-feedback">
+                                Name is required.
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="email">Email*</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                    <div class="invalid-feedback">
-                        Email is required or not in correct format.
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                            <div class="invalid-feedback">
+                                Email is required or not in correct format.
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <p class="col-12">Subscription</p>                  
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="subscription1" name="subscription"
-                           required/>
-                        <label class="form-check-label" for="subscription1">Option 1</label>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <p class="subscriptions">Available subscriptions</p>                  
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="monthly" name="subscription"
+                                required/>
+                                <label class="form-check-label" for="monthly">Monthly</label>
+                            </div>
+        ​
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="weekly" name="subscription" class="form-check-input" required/>
+                                <label class="form-check-label" for="weekly">Weekly</label>
+                            </div>
+        ​
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="daily" name="subscription" class="form-check-input" required/>
+                                <label class="form-check-label" for="daily">Daily</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="additionalInfo"><br>Feel free to get in touch! </label>
+                            <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="5"></textarea>
+                        </div>
+        ​
+                        <div class="form-group row form-justify-content-end">
+                            <button type="reset" class="btn btn-danger col-12 button">Reset</button>
+                            <button type="submit" class="btn btn-primary col-12 button">Submit</button>
+                        </div>
                     </div>
-​
-                    <div class="form-check form-check-inline">
-                        <input type="radio" id="subscription2" name="subscription" class="form-check-input" required/>
-                        <label class="form-check-label" for="subscription2">Option 2</label>
-                    </div>
-​
-                    <div class="form-check form-check-inline">
-                        <input type="radio" id="subscription3" name="subscription" class="form-check-input" required/>
-                        <label class="form-check-label" for="subscription3">Option 3</label>
-                    </div>
-                </div>
-​
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="collection1" name="collection" required/>
-                    <label class="form-check-label" for="collection1">Malazan Book of the Fallen</label>
-                </div>
-​
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="collection2" name="collection" required/>
-                    <label class="form-check-label" for="collection2">Novels of the Malazan Empire</label>
-                </div>
-​
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="collection3" name="collection" required/>
-                    <label class="form-check-label" for="collection3">Path to Ascendancy</label>
-                </div>
-​
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="collection4" name="collection" required/>
-                    <label class="form-check-label" for="collection4">Kharkanas Trilogy</label>
-                </div>
-​
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="collection5" name="collection" required/>
-                    <label class="form-check-label" for="collection5">Witness Trilogy</label>
-                </div>
-​
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="collection6" name="collection" required/>
-                    <label class="form-check-label" for="collection6">Tales of Bauchelain & Korbal Broach</label>
-                    <div class="invalid-feedback">Choose at least one.</div>
-                </div>
-​
-                <div class="form-group row">
-                    <label for="additionalInfo">Additional info</label>
-                    <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="5"></textarea>
-                </div>
-​
-                <div class="form-group row justify-content-end">
-                    <button type="button" class="btn btn-danger col-3 mr-2 col-sm-4 ">Reset</button>
-                    <button type="submit" class="btn btn-primary col-3 col-sm-4">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>     
+                </form>
+            </div>
+        </div> 
+    </div>    
     <!-- /.signup form -->
 ​
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-5 social author-left">
-                    <div class="row">
-                        <div class="col-12 col-sm-8">
-                            <p class="font-switch">Steven Erikson</p>
-                        </div>
-                        <div class="col-12 col-sm-4 social-links">
-                            <a href="https://www.facebook.com/steveneriksonofficial/" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
-                            <a href="https://twitter.com/erikson_steven?lang=en" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://steven-erikson.org/" target="_blank"><i
-                                    class="far fa-address-card"></i></a>
-                        </div>
+    <footer class="container-fluid fixed-bottom">
+        <div class="row">
+            <div class="col-5 social author-left">
+                <div class="row">
+                    <div class="col-12 col-sm-8">
+                        <p class="font-switch">Steven Erikson</p>
+                    </div>
+                    <div class="col-12 col-sm-4 social-links">
+                        <a href="https://www.facebook.com/steveneriksonofficial/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/erikson_steven?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://steven-erikson.org/" target="_blank"><i class="far fa-address-card"></i></a>
                     </div>
                 </div>
-                <div class="col-2 social-helmet">
-                    <span class="icon-helmet icon-helmet-md"></span>
-                </div>
-                <div class="col-5 social author-right">
-                    <div class="row">
-                        <div class="col-12 col-sm-8 order-sm-2">
-                            <p class="social-author font-switch">Ian C. Esslemont</p>
-                        </div>
-                        <div class="col-12 col-sm-4 order-sm-1 social-links rtl">
-                            <a href="https://www.facebook.com/Ian-Cameron-Esslemont-109808602378146/" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
-                            <a href="https://twitter.com/hashtag/iancesslemont?lang=en" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://ian-esslemont.com/" target="_blank"><i class="far fa-address-card"></i></a>
-                        </div>
+            </div>
+            <div class="col-2 social-helmet">
+                <span class="icon-helmet icon-helmet-md"></span>
+            </div>
+            <div class="col-5 social author-right">
+                <div class="row">
+                    <div class="col-12 col-sm-8 order-sm-2">
+                        <p class="social-author font-switch">Ian C. Esslemont</p>
+                    </div>
+                    <div class="col-12 col-sm-4 order-sm-1 social-links rtl">
+                        <a href="https://www.facebook.com/Ian-Cameron-Esslemont-109808602378146/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/hashtag/iancesslemont?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://ian-esslemont.com/" target="_blank"><i class="far fa-address-card"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- /.footer -->
-​
+
     <!-- Bootstrap v4.6 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
-​
-        <!-- Bootstrap validation from official documentation and checkbox validation from https://stackoverflow.com/a/52834808-->
-        <script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+         <!-- Bootstrap validation from official documentation and checkbox validation from https://stackoverflow.com/a/52834808-->
+         <script>
             // Example starter JavaScript for disabling form submissions if there are invalid fields
             (function() {
               'use strict';
@@ -197,13 +152,6 @@
                 var validation = Array.prototype.filter.call(forms, function(form) {
                   form.addEventListener('submit', function(event) {
                       var failed=true;
-                    if ($("[name='collection']:checked").length == 0) {
-                        $("[name='collection']").attr('required', true);             
-                        failed=false;           
-                    }
-                    else {
-                        $("[name='collection']").attr('required', false);
-                    }
 ​
                     if (form.checkValidity() === false) {
                         failed = true;
@@ -221,5 +169,4 @@
             })();
             </script>
 </body>
-​
 </html>
