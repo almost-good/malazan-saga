@@ -125,16 +125,13 @@ Main thing that I would like to do is optimise CSS code, that will allow me to h
         * Glen Cook ~ Image sourced from Wikimedia [Glen Cook](https://commons.wikimedia.org/wiki/File:Utos107-Glen_Cook.jpg)
         * Michael A. Stackpole ~ Image sourced from Wikimedia [Michael A. Stackpole](https://commons.wikimedia.org/wiki/File:Michael_Stackpole_by_Gage_Skidmore.jpg)
     * Book Images
-        * Complete Malazan Book of the Fallen Book Cover ~ Image sourced from Goodreads [Malazan Book of the Fallen](https://www.goodreads.com/book/show/20345548-the-complete-malazan-book-of-the-fallen)
-        * Night of Knives Book Cover ~ Image sourced from Goodreads [Night of Knives](https://www.goodreads.com/book/show/458394.Night_of_Knives)
-        * Dancer's Lament Book Cover ~ Image sourced from Goodreads [Dancer's Lament](https://www.goodreads.com/book/show/25480364-dancer-s-lament)
-        * Forge of Darkness Book Cover ~ Image sourced from Goodreads [Forge of Darkness](https://www.goodreads.com/book/show/13038833-forge-of-darkness)
-        * The God is not Willing Book Cover ~ Image sourced from Fandom website [The God is not Willing](https://malazan.fandom.com/wiki/The_God_is_Not_Willing) and is used in line with Fair Use law
-        * Bauchelain and Korbal Broach Book Cover ~ Image sourced from Goodreads [Baushelain and Korbal Broach](https://www.goodreads.com/book/show/6616579-bauchelain-and-korbal-broach)
+        * All of the book images sourced from [GoodReads](https://www.goodreads.com)
 * Icons
     * Helmet Icon ~ Icon sourced from Flaticon [Helmet Icon](https://www.flaticon.com/free-icon/helmet_812225?term=helmet&related_id=812225)
+* Text ~ All the book description text sourced from [GoodReads](https://www.goodreads.com)
 ### Code
-* [Bootstrap](https://getbootstrap.com/docs/4.6/components/navbar/) ~ Navigation
+* Javascript Code snippet adapted from: https://www.jqueryscript.net/slider/responsive-bootstrap-carousel-multiple-items.html for Carousel
+* Bootstrap 
 
 
 
